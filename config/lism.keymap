@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD02";
             #binding-cells = <0>;
-            bindings = <&lt 3 BACKSPACE>, <&mo 5>;
+            bindings = <&lt 3 BACKSPACE>, <&kp BACKSPACE>, <&mo 5>;
 
             tapping-term-ms = <300>;
         };
@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD10";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&kp DEL>, <&mc05>;
 
             tapping-term-ms = <300>;
         };
@@ -137,8 +137,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD11";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&mc01>;
             tapping-term-ms = <300>;
         };
 
@@ -146,8 +145,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD12";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&mc02>;
             tapping-term-ms = <300>;
         };
 
@@ -155,8 +153,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD13";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&mc03>;
             tapping-term-ms = <300>;
         };
 
@@ -164,7 +161,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD14";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&mc04>, <&mc06>;
 
             tapping-term-ms = <300>;
         };
@@ -173,8 +170,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD15";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&kp BACKSPACE>;
             tapping-term-ms = <300>;
         };
 
@@ -200,7 +196,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD18";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&kp LC(PAGE_UP)>, <&mc07>;
 
             tapping-term-ms = <300>;
         };
@@ -209,8 +205,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD19";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&kp LC(PAGE_DOWN)>;
             tapping-term-ms = <300>;
         };
 
@@ -218,7 +213,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD20";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&none>, <&kp LC(N1)>;
 
             tapping-term-ms = <300>;
         };
@@ -245,7 +240,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD23";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&kp LC(LS(F1))>, <&mc08>;
 
             tapping-term-ms = <300>;
         };
@@ -263,8 +258,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD25";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&mc09>;
             tapping-term-ms = <300>;
         };
 
@@ -272,8 +266,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD26";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&mc10>;
             tapping-term-ms = <300>;
         };
 
@@ -281,8 +274,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD27";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-
+            bindings = <&mc11>;
             tapping-term-ms = <300>;
         };
 
@@ -499,12 +491,14 @@
 
         layer_0 {
             bindings = <
-&lt 5 Q      &lt 4 W      &lt 3 E     &kp R        &kp T                        &kp Y        &kp U        &kp I   &kp O      &lt 5 P
-&lt 2 A      &lt 1 S      &kp D       &mt LANG2 F  &kp G                        &kp H        &mt LANG1 J  &kp K   &kp L      &mkp MB1
-&mt LSHFT Z  &mt RSHFT X  &mt LGUI C  &mt LALT V   &mt LCTRL B                  &TD03        &kp N        &kp M   &kp COMMA  &mt RSHFT DOT
-&kp LCTRL    &kp LGUI     &TD00       &trans       &lt 2 ENTER  &TD01    &TD02  &lt 1 ENTER  &trans       &TD04   &TD05      &TD06
+&lt 5 Q      &lt 4 W      &lt 3 E     &kp R        &kp T                        &kp Y        &kp U        &lt 3 I  &lt 4 O    &lt 5 P
+&lt 2 A      &lt 1 S      &kp D       &mt LANG2 F  &kp G                        &kp H        &mt LANG1 J  &kp K    &kp L      &mkp MB1
+&mt LSHFT Z  &mt RSHFT X  &mt LGUI C  &mt LALT V   &mt LCTRL B                  &TD03        &kp N        &kp M    &kp COMMA  &mt RSHFT DOT
+&kp LCTRL    &kp LGUI     &TD00       &trans       &lt 2 ENTER  &TD01    &TD02  &lt 1 ENTER  &trans       &TD04    &TD05      &TD06
                           &trans      &trans       &trans                       &trans       &trans       &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         layer_1 {
