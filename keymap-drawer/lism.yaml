@@ -35,9 +35,9 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - '&TD00'
   - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - '&TD01'
   - '&TD02'
+  - {t: '$$mdi:backspace$$', h: '3'}
   - {t: '$$mdi:keyboard-return$$', h: '1'}
   - {t: ▽, type: trans}
   - '&TD04'
@@ -148,44 +148,44 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Gui+$$mdi:keyboard-tab$$
+  - '&TD28'
   - {t: '$$mdi:arrow-up-bold$$', type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&TD29'
+  - Gui+T
+  - Ctl+T
+  - Sft+Ctl+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+$$mdi:keyboard-tab$$
+  - Ctl+F4
+  - Sft+Gui+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Gui+$$mdi:arrow-right-bold$$
+  - Alt+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
+  - Alt+$$mdi:arrow-right-bold$$
+  - Gui+Z
+  - {t: ▽, type: trans}
+  - Gui+P
+  - F11
+  - F5
+  - F5
+  - F11
+  - Ctl+L
+  - {t: ▽, type: trans}
+  - Gui+Z
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+KP MINUS
+  - Gui+KP PLUS
+  - Ctl+KP PLUS
+  - Ctl+KP MINUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,19 +253,19 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT BLE
+  - OUT USB
   - {t: ▽, type: trans}
   - BT CLR ALL
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - BT CLR
+  - BT CLR ALL
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -278,14 +278,14 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
   - $$mdi:lock-open-variant-outline$$
+  - Gui+L
   - {t: ▽, type: trans}
+  - Gui+D
+  - Alt+F4
+  - Alt+F4
+  - Gui+D
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+L
   - $$mdi:lock-open-variant-outline$$
   - $$mdi:progress-download$$
   - {t: ▽, type: trans}
