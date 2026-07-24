@@ -10,12 +10,12 @@
 &mt {
     tapping-term-ms = <300>;
     flavor = "balanced";
-    require-prior-idle-ms = <180>;
+    require-prior-idle-ms = <250>;
 };
 
 &lt {
     quick-tap-ms = <300>;
-    require-prior-idle-ms = <180>;
+    require-prior-idle-ms = <250>;
 };
 
 / {
