@@ -344,13 +344,13 @@
         };
 
         combo05 {
-            bindings = <&mo 2>;
+            bindings = <&mkp MB2>;
             key-positions = <18 19>;
         };
 
         combo06 {
-            bindings = <&mkp MB2>;
-            key-positions = <17 18>;
+            bindings = <&kp L>;
+            key-positions = <18 17>;
         };
 
         combo07 {
@@ -491,8 +491,8 @@
 
         layer_0 {
             bindings = <
-&lt 5 Q      &lt 4 W      &lt 3 E     &kp R        &kp T                                  &kp Y        &kp U        &lt 3 I  &lt 4 O    &lt 5 P
-&lt 2 A      &lt 1 S      &kp D       &mt LANG2 F  &kp G                                  &kp H        &mt LANG1 J  &kp K    &kp L      &mkp MB1
+&lt 5 Q      &lt 4 W      &lt 3 E     &kp R        &kp T                                  &kp Y        &kp U        &lt 3 I  &lt 4 O    &mkp MB1
+&lt 2 A      &lt 1 S      &kp D       &mt LANG2 F  &kp G                                  &kp H        &mt LANG1 J  &kp K    &kp P      &lt 2 TAB
 &mt LSHFT Z  &mt RSHFT X  &mt LGUI C  &mt LALT V   &mt LCTRL B                            &TD03        &kp N        &kp M    &kp COMMA  &mt RSHFT DOT
 &kp LCTRL    &kp LGUI     &TD00       &trans       &TD01        &TD02    &lt 3 BACKSPACE  &lt 1 ENTER  &trans       &TD04    &TD05      &TD06
                           &trans      &trans       &trans                                 &trans       &trans       &trans
