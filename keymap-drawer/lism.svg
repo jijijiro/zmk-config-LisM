@@ -266,10 +266,8 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(700, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">P</text>
-<a href="#x_x">
-<text x="0" y="24" class="key hold layer-activator">5</text>
-</a></g>
+<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
+</g>
 <g transform="translate(28, 84)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">A</text>
@@ -310,12 +308,14 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(644, 84)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">L</text>
+<text x="0" y="0" class="key tap">P</text>
 </g>
 <g transform="translate(700, 84)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
-</g>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<a href="#x_x">
+<text x="0" y="24" class="key hold layer-activator">2</text>
+</a></g>
 <g transform="translate(28, 140)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Z</text>
@@ -460,12 +460,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="672" y="84" class="combo tap layer-activator">2</text>
-</a></g>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="663" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<text x="616" y="84" class="combo tap">L</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
@@ -699,12 +698,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="672" y="84" class="combo tap layer-activator">2</text>
-</a></g>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="663" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<text x="616" y="84" class="combo tap">L</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
@@ -946,12 +944,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="672" y="84" class="combo tap layer-activator">2</text>
-</a></g>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="663" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<text x="616" y="84" class="combo tap">L</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
@@ -1191,12 +1188,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="672" y="84" class="combo tap layer-activator">2</text>
-</a></g>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="663" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<text x="616" y="84" class="combo tap">L</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
@@ -1430,12 +1426,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="672" y="84" class="combo tap layer-activator">2</text>
-</a></g>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="663" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<text x="616" y="84" class="combo tap">L</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>
@@ -1698,12 +1693,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="71" width="28" height="26" class="combo"/>
-<a href="#x_x">
-<text x="672" y="84" class="combo tap layer-activator">2</text>
-</a></g>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="663" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+</g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="607" y="75" height="18" width="18.0" class="combo tap glyph mdi:mouse-right-click-outline"/>
+<text x="616" y="84" class="combo tap">L</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="71" width="28" height="26" class="combo"/>

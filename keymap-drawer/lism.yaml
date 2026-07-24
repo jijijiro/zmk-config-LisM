@@ -10,7 +10,7 @@ layers:
   - U
   - {t: I, h: '3'}
   - {t: O, h: '4'}
-  - {t: P, h: '5'}
+  - $$mdi:mouse-left-click-outline$$
   - {t: A, h: '2'}
   - {t: S, h: '1'}
   - D
@@ -19,8 +19,8 @@ layers:
   - H
   - {t: J, h: LANG1}
   - K
-  - L
-  - $$mdi:mouse-left-click-outline$$
+  - P
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
@@ -306,9 +306,9 @@ combos:
 - p: [8, 9]
   k: $$mdi:backspace-reverse-outline$$
 - p: [18, 19]
-  k: '2'
-- p: [17, 18]
   k: $$mdi:mouse-right-click-outline$$
+- p: [18, 17]
+  k: L
 - p: [16, 17]
   k: '&mc00'
 - p: [36, 37]
