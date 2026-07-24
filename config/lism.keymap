@@ -10,12 +10,12 @@
 &mt {
     tapping-term-ms = <300>;
     flavor = "balanced";
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <180>;
 };
 
 &lt {
     quick-tap-ms = <300>;
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <180>;
 };
 
 / {
@@ -47,7 +47,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD01";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&mo 4>, <&mo 3>;
+            bindings = <&lt 2 ENTER>, <&mo 4>;
 
             tapping-term-ms = <300>;
         };
@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD02";
             #binding-cells = <0>;
-            bindings = <&lt 3 BACKSPACE>, <&kp BACKSPACE>, <&mo 5>;
+            bindings = <&lt 1 SPACE>, <&mo 3>;
 
             tapping-term-ms = <300>;
         };
@@ -282,7 +282,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD28";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&kp LG(LC(LEFT))>, <&kp LA(LC(LG(LEFT)))>;
 
             tapping-term-ms = <300>;
         };
@@ -291,7 +291,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD29";
             #binding-cells = <0>;
-            bindings = <&none>, <&none>;
+            bindings = <&kp LC(LG(RIGHT))>, <&kp LA(LC(LG(RIGHT)))>;
 
             tapping-term-ms = <300>;
         };
@@ -491,11 +491,11 @@
 
         layer_0 {
             bindings = <
-&lt 5 Q      &lt 4 W      &lt 3 E     &kp R        &kp T                        &kp Y        &kp U        &lt 3 I  &lt 4 O    &lt 5 P
-&lt 2 A      &lt 1 S      &kp D       &mt LANG2 F  &kp G                        &kp H        &mt LANG1 J  &kp K    &kp L      &mkp MB1
-&mt LSHFT Z  &mt RSHFT X  &mt LGUI C  &mt LALT V   &mt LCTRL B                  &TD03        &kp N        &kp M    &kp COMMA  &mt RSHFT DOT
-&kp LCTRL    &kp LGUI     &TD00       &trans       &lt 2 ENTER  &TD01    &TD02  &lt 1 ENTER  &trans       &TD04    &TD05      &TD06
-                          &trans      &trans       &trans                       &trans       &trans       &trans
+&lt 5 Q      &lt 4 W      &lt 3 E     &kp R        &kp T                                  &kp Y        &kp U        &lt 3 I  &lt 4 O    &lt 5 P
+&lt 2 A      &lt 1 S      &kp D       &mt LANG2 F  &kp G                                  &kp H        &mt LANG1 J  &kp K    &kp L      &mkp MB1
+&mt LSHFT Z  &mt RSHFT X  &mt LGUI C  &mt LALT V   &mt LCTRL B                            &TD03        &kp N        &kp M    &kp COMMA  &mt RSHFT DOT
+&kp LCTRL    &kp LGUI     &TD00       &trans       &TD01        &TD02    &lt 3 BACKSPACE  &lt 1 ENTER  &trans       &TD04    &TD05      &TD06
+                          &trans      &trans       &trans                                 &trans       &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -527,11 +527,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans    &kp UP    &trans     &trans                    &trans  &trans    &kp UP    &trans     &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &trans    &trans    &trans     &trans                    &trans  &trans    &trans    &trans     &trans
-&trans  &trans    &trans    &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans
-                  &trans    &trans     &trans                    &trans  &trans    &trans
+&kp LC(LG(TAB))   &TD28     &kp UP     &TD29      &kp LG(T)                                              &kp LC(T)         &kp LS(LC(TAB))  &kp UP     &kp LC(TAB)  &kp LC(F4)
+&kp LS(LG(LEFT))  &kp LEFT  &kp DOWN   &kp RIGHT  &kp LS(LG(RIGHT))                                      &kp LA(LEFT)      &kp LEFT         &kp DOWN   &kp RIGHT    &kp LA(RIGHT)
+&kp LG(Z)         &trans    &kp LG(P)  &kp F11    &kp F5                                                 &kp F5            &kp F11          &kp LC(L)  &trans       &kp LG(Z)
+&trans            &trans    &trans     &trans     &kp LG(KP_MINUS)   &kp LG(KP_PLUS)    &kp LC(KP_PLUS)  &kp LC(KP_MINUS)  &trans           &trans     &trans       &trans
+                            &trans     &trans     &trans                                                 &trans            &trans           &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
@@ -551,11 +551,11 @@
 
         layer_5 {
             bindings = <
-&trans       &out OUT_USB    &out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&trans       &trans          &trans        &trans        &bt BT_CLR_ALL                    &bt BT_CLR    &trans        &trans        &trans          &trans
-&sys_reset   &trans          &trans        &trans        &trans                            &trans        &trans        &trans        &trans          &sys_reset
-&bootloader  &studio_unlock  &trans        &trans        &trans          &trans    &trans  &trans        &trans        &trans        &studio_unlock  &bootloader
-                             &trans        &trans        &trans                            &trans        &trans        &trans
+&trans          &out OUT_USB    &out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1                            &bt BT_SEL 0  &bt BT_SEL 1  &out OUT_BLE  &out OUT_USB    &trans
+&bt BT_CLR_ALL  &bt BT_CLR      &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR      &bt BT_CLR_ALL
+&sys_reset      &trans          &trans        &trans        &trans                                  &trans        &trans        &trans        &trans          &sys_reset
+&bootloader     &studio_unlock  &kp LG(L)     &trans        &kp LG(D)     &kp LA(F4)    &kp LA(F4)  &kp LG(D)     &trans        &kp LG(L)     &studio_unlock  &bootloader
+                                &trans        &trans        &trans                                  &trans        &trans        &trans
             >;
 
             sensor-bindings = <&encoder_kp UP DOWN>;
