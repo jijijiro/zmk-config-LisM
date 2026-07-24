@@ -312,7 +312,7 @@ combos:
 - p: [16, 17]
   k: '&mc00'
 - p: [36, 37]
-  k: ''
+  k: '5'
 - p: [40, 41]
   k: $$mdi:arrow-down-bold$$
   l: ['1']

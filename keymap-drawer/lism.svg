@@ -472,7 +472,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-</g>
+<a href="#x_x">
+<text x="448" y="196" class="combo tap layer-activator">5</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 308)" class="layer-1">
@@ -710,7 +712,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-</g>
+<a href="#x_x">
+<text x="448" y="196" class="combo tap layer-activator">5</text>
+</a></g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="658" y="183" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="663" y="187" height="18" width="18.0" class="combo tap glyph mdi:arrow-down-bold"/>
@@ -956,7 +960,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-</g>
+<a href="#x_x">
+<text x="448" y="196" class="combo tap layer-activator">5</text>
+</a></g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="103" y="187" height="18" width="18.0" class="combo tap glyph mdi:arrow-down-bold"/>
@@ -1200,7 +1206,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-</g>
+<a href="#x_x">
+<text x="448" y="196" class="combo tap layer-activator">5</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1232)" class="layer-4">
@@ -1438,7 +1446,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-</g>
+<a href="#x_x">
+<text x="448" y="196" class="combo tap layer-activator">5</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1540)" class="layer-5">
@@ -1705,7 +1715,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-</g>
+<a href="#x_x">
+<text x="448" y="196" class="combo tap layer-activator">5</text>
+</a></g>
 </g>
 </g>
 <text x="758.0" y="1876.0" class="footer">LisM KEYMAPS | Created with keymap-drawer</text></svg>
