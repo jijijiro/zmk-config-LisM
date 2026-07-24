@@ -527,7 +527,7 @@
 
         layer_3 {
             bindings = <
-&kp LC(LG(TAB))   &TD28     &kp UP     &TD29      &kp LG(T)                                              &kp LC(T)         &kp LS(LC(TAB))  &kp UP     &kp LC(TAB)  &kp LC(F4)
+&kp LC(LA(TAB))   &TD28     &kp UP     &TD29      &kp LG(T)                                              &kp LC(T)         &kp LS(LC(TAB))  &kp UP     &kp LC(TAB)  &kp LC(F4)
 &kp LS(LG(LEFT))  &kp LEFT  &kp DOWN   &kp RIGHT  &kp LS(LG(RIGHT))                                      &kp LA(LEFT)      &kp LEFT         &kp DOWN   &kp RIGHT    &kp LA(RIGHT)
 &kp LG(Z)         &trans    &kp LG(P)  &kp F11    &kp F5                                                 &kp F5            &kp F11          &kp LC(L)  &trans       &kp LG(Z)
 &trans            &trans    &trans     &trans     &kp LG(KP_MINUS)   &kp LG(KP_PLUS)    &kp LC(KP_PLUS)  &kp LC(KP_MINUS)  &trans           &trans     &trans       &trans
