@@ -148,7 +148,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - Ctl+Gui+$$mdi:keyboard-tab$$
+  - Ctl+Alt+$$mdi:keyboard-tab$$
   - '&TD28'
   - {t: '$$mdi:arrow-up-bold$$', type: held}
   - '&TD29'
