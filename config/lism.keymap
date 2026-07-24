@@ -359,7 +359,7 @@
         };
 
         combo08 {
-            bindings = <&none>;
+            bindings = <&mo 5>;
             key-positions = <36 37>;
         };
 
