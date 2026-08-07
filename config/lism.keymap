@@ -471,6 +471,87 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo00 {
+            bindings = <&kp ESC>;
+            key-positions = <0 1 2>;
+        };
+
+        combo01 {
+            bindings = <&kp DEL>;
+            key-positions = <0 1>;
+        };
+
+        combo02 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 11>;
+        };
+
+        combo03 {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
+
+        combo05 {
+            bindings = <&kp KP_COMMA>;
+            key-positions = <30 31>;
+        };
+
+        combo06 {
+            bindings = <&mo 4>;
+            key-positions = <34 35>;
+        };
+
+        combo07 {
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+        };
+
+        combo08 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 19>;
+        };
+
+        combo09 {
+            bindings = <&none>;
+            key-positions = <17 18 19>;
+        };
+
+        combo10 {
+            bindings = <&mc00>;
+            key-positions = <16 17>;
+        };
+
+        combo11 {
+            bindings = <&kp ENTER>;
+            key-positions = <28 29>;
+        };
+
+        combo12 {
+            bindings = <&kp KP_COMMA>;
+            key-positions = <39 40>;
+        };
+
+        combo13 {
+            bindings = <&mo 6>;
+            key-positions = <36 37>;
+        };
+
+        combo14 {
+            bindings = <&bt BT_CLR>;
+            key-positions = <8 9>;
+            layers = <5>;
+        };
+
+        combo15 {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <8 9 7>;
+            layers = <5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
