@@ -484,7 +484,7 @@
 
         combo00 {
             bindings = <&kp ESC>;
-            key-positions = <0 1 2>;
+            key-positions = <12 13>;
         };
 
         combo01 {
@@ -523,8 +523,8 @@
         };
 
         combo09 {
-            bindings = <&none>;
-            key-positions = <17 18 19>;
+            bindings = <&kp ESC>;
+            key-positions = <17 18>;
         };
 
         combo10 {
