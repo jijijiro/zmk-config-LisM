@@ -500,11 +500,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans    &kp UP    &trans     &trans                    &trans  &trans    &kp UP    &trans     &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &trans    &trans    &trans     &trans                    &trans  &trans    &trans    &trans     &trans
-&trans  &trans    &trans    &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans
-                  &trans    &trans     &trans                    &trans  &trans    &trans
+&kp LA(LC(TAB))      &TD28     &kp UP    &TD29      &mt F5 LG(LEFT)                                         &kp LC(T)        &kp LS(LC(TAB))  &kp UP    &kp LC(TAB)  &mt F5 LC(F4)
+&kp LS(LG(LEFT))     &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(LG(RIGHT))                                       &kp LA(LEFT)     &kp LEFT         &kp DOWN  &kp RIGHT    &kp LA(RIGHT)
+&mt LC(LSHFT) LC(L)  &trans    &trans    &kp F11    &kp F3                                                  &kp F3           &kp F11          &trans    &trans       &mt LG(RSHFT) LC(L)
+&kp LG(P)            &trans    &trans    &trans     &kp LG(KP_MINUS)   &kp LG(KP_PLUS)    &kp LC(KP_MINUS)  &kp LC(KP_PLUS)  &trans           &trans    &trans       &trans
+                               &trans    &trans     &trans                                                  &trans           &trans           &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
