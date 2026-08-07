@@ -292,7 +292,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD28";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(LG(LEFT))>, <&kp LA(LC(LG(LEFT)))>;
+
             tapping-term-ms = <300>;
         };
 
@@ -300,7 +301,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD29";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(LG(RIGHT))>, <&kp LA(LC(LG(RIGHT)))>;
+
             tapping-term-ms = <300>;
         };
 
@@ -598,7 +600,7 @@
 
         layer_3 {
             bindings = <
-&kp LA(LC(TAB))      &TD28     &kp UP    &TD29      &mt F5 LG(LEFT)                                         &kp LC(T)        &kp LS(LC(TAB))  &kp UP    &kp LC(TAB)  &mt F5 LC(F4)
+&kp LA(LC(TAB))      &TD28     &kp UP    &TD29      &mt F5 LG(T)                                            &kp LC(T)        &kp LS(LC(TAB))  &kp UP    &kp LC(TAB)  &mt F5 LC(F4)
 &kp LS(LG(LEFT))     &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(LG(RIGHT))                                       &kp LA(LEFT)     &kp LEFT         &kp DOWN  &kp RIGHT    &kp LA(RIGHT)
 &mt LC(LSHFT) LC(L)  &trans    &trans    &kp F11    &kp F3                                                  &kp F3           &kp F11          &trans    &trans       &mt LG(RSHFT) LC(L)
 &kp LG(P)            &trans    &trans    &trans     &kp LG(KP_MINUS)   &kp LG(KP_PLUS)    &kp LC(KP_MINUS)  &kp LC(KP_PLUS)  &trans           &trans    &trans       &trans
