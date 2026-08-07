@@ -347,6 +347,116 @@
         };
     };
 
+    macros {
+        mc00: mc00 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "MC00";
+        };
+
+        mc01: mc01 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LANG2 &kp N1 &kp LC(ENTER)>,
+                <&macro_pause_for_release>;
+
+            label = "MC01";
+        };
+
+        mc02: mc02 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LANG2 &kp N2 &kp LC(ENTER)>,
+                <&macro_pause_for_release>;
+
+            label = "MC02";
+        };
+
+        mc03: mc03 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LANG2 &kp N3 &kp LC(ENTER)>,
+                <&macro_pause_for_release>;
+
+            label = "MC03";
+        };
+
+        mc04: mc04 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LANG2 &kp MINUS &kp LC(ENTER)>,
+                <&macro_pause_for_release>;
+
+            label = "MC04";
+        };
+
+        mc05: mc05 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LANG2 &kp DOT &kp LC(ENTER)>,
+                <&macro_pause_for_release>;
+
+            label = "MC05";
+        };
+
+        mc06: mc06 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(LC(V)) &kp T &kp ENTER>,
+                <&macro_pause_for_release>;
+
+            label = "MC06";
+        };
+
+        mc07: mc07 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(LC(V)) &kp F &kp ENTER>,
+                <&macro_pause_for_release>;
+
+            label = "MC07";
+        };
+
+        mc08: mc08 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(LC(V)) &kp V &kp ENTER>,
+                <&macro_pause_for_release>;
+
+            label = "MC08";
+        };
+
+        mc09: mc09 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp A &kp L>;
+            label = "MC09";
+        };
+
+        mc10: mc10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp A &kp C>;
+            label = "MC10";
+        };
+
+        mc11: mc11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp A &kp R>;
+            label = "MC11";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
