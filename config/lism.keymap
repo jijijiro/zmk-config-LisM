@@ -498,12 +498,14 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans                    &trans  &trans  &trans
+&trans  &trans    &kp UP    &trans     &trans                    &trans  &trans    &kp UP    &trans     &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans  &trans    &trans    &trans     &trans                    &trans  &trans    &trans    &trans     &trans
+&trans  &trans    &trans    &trans     &trans  &trans    &trans  &trans  &trans    &trans    &trans     &trans
+                  &trans    &trans     &trans                    &trans  &trans    &trans
             >;
+
+            sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
         };
 
         layer_4 {
