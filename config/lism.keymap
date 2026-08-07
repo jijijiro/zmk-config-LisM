@@ -64,7 +64,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD01";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp UP>, <&kp HOME>, <&kp PAGE_UP>;
+
             tapping-term-ms = <300>;
         };
 
@@ -72,7 +73,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD02";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp DOWN>, <&kp END>, <&kp PAGE_DOWN>;
+
             tapping-term-ms = <300>;
         };
 
@@ -96,7 +98,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD05";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp COMMA>, <&kp LS(N2)>;
+
             tapping-term-ms = <300>;
         };
 
@@ -104,7 +107,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD06";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp DOT>, <&kp APOS>;
+
             tapping-term-ms = <300>;
         };
 
@@ -112,7 +116,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD07";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp SLASH>, <&kp LS(N1)>;
+
             tapping-term-ms = <300>;
         };
 
@@ -120,7 +125,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD08";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp KP_PLUS>, <&kp KP_ASTERISK>;
+
             tapping-term-ms = <300>;
         };
 
@@ -128,7 +134,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD09";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp KP_MINUS>, <&kp KP_SLASH>;
+
             tapping-term-ms = <300>;
         };
 
@@ -136,7 +143,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD10";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&mc05>, <&kp LS(LC(F1))>;
+
             tapping-term-ms = <300>;
         };
 
@@ -168,7 +176,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD14";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&mc04>, <&mc06>;
+
             tapping-term-ms = <300>;
         };
 
@@ -200,7 +209,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD18";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(PAGE_UP)>, <&mc07>;
+
             tapping-term-ms = <300>;
         };
 
@@ -216,7 +226,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD20";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&mt LC(LSHFT) LC(Z)>, <&kp LC(Y)>;
+
             tapping-term-ms = <300>;
         };
 
@@ -240,7 +251,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD23";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(V)>, <&mc08>;
+
             tapping-term-ms = <300>;
         };
 
@@ -476,11 +488,11 @@
 
         layer_1 {
             bindings = <
-&TD10  &TD11  &TD12   &TD13   &TD14                             &kp HOME   &kp END    &kp N7  &kp N8  &kp N9
-&TD15  &TD16  &TD17   &TD18   &TD19                             &kp PG_UP  &kp PG_DN  &kp N4  &kp N5  &kp N6
-&TD20  &TD21  &TD22   &TD23   &TD24                             &TD08      &TD09      &kp N4  &kp N5  &kp N6
-&TD25  &TD26  &TD27   &trans  &kp ENTER  &kp SPACE    &kp BSPC  &kp TAB    &trans     &kp N0  &TD06   &kp TAB
-              &trans  &trans  &trans                            &trans     &trans     &trans
+&TD10      &mc01      &mc02      &mc03   &TD14                                     &kp HOME   &kp END    &kp N7  &kp N8  &kp N9
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &TD18   &kp LC(PAGE_DOWN)                         &kp PG_UP  &kp PG_DN  &kp N4  &kp N5  &kp N6
+&TD20      &kp LC(X)  &kp LC(C)  &TD23   &kp LC(B)                                 &TD08      &TD09      &kp N4  &kp N5  &kp N6
+&mc09      &mc10      &mc11      &trans  &kp ENTER          &kp SPACE    &kp BSPC  &kp TAB    &trans     &kp N0  &TD06   &kp TAB
+                      &trans     &trans  &trans                                    &trans     &trans     &trans
             >;
 
             sensor-bindings = <&encoder_kp C_BRI_DN C_BRI_UP>;
