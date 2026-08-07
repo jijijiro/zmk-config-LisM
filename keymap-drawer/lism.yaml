@@ -152,7 +152,7 @@ layers:
   - '&TD28'
   - {t: '$$mdi:arrow-up-bold$$', type: held}
   - '&TD29'
-  - {t: 'Gui+$$mdi:arrow-left-bold$$', h: F5}
+  - {t: Gui+T, h: F5}
   - Ctl+T
   - Sft+Ctl+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
