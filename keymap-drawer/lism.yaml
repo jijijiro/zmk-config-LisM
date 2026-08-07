@@ -344,7 +344,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1, 2]
+- p: [12, 13]
   k: $$mdi:keyboard-esc$$
 - p: [0, 1]
   k: $$mdi:backspace-reverse-outline$$
@@ -360,8 +360,8 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [18, 19]
   k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [17, 18, 19]
-  k: ''
+- p: [17, 18]
+  k: $$mdi:keyboard-esc$$
 - p: [16, 17]
   k: '&mc00'
 - p: [28, 29]
