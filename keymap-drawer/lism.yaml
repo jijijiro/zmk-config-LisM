@@ -51,7 +51,7 @@ layers:
   - {t: ▽, type: trans}
   '1':
   - '&TD10'
-  - '&mc01'
+  - '&TD11'
   - '&mc02'
   - '&mc03'
   - '&TD14'
