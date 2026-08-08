@@ -153,11 +153,11 @@ layers:
   - {t: '$$mdi:arrow-up-bold$$', type: held}
   - '&TD29'
   - {t: Gui+T, h: F5}
-  - Ctl+T
+  - {t: Ctl+T, h: Ctl+F5}
   - Sft+Ctl+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:keyboard-tab$$
-  - {t: Ctl+F4, h: F5}
+  - Ctl+F4
   - Sft+Gui+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -344,7 +344,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [12, 13]
+- p: [0, 1, 2]
   k: $$mdi:keyboard-esc$$
 - p: [0, 1]
   k: $$mdi:backspace-reverse-outline$$
