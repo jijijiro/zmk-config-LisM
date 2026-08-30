@@ -503,7 +503,7 @@
         mc12: mc12 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp UP>;
+            bindings = <&macro_press>, <&kp GLOBE &kp UP>, <&macro_release>;
 
             label = "MC12";
         };
@@ -511,7 +511,7 @@
         mc13: mc13 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp LEFT>;
+            bindings = <&macro_press>, <&kp GLOBE &kp LEFT>, <&macro_release>;
 
             label = "MC13";
         };
@@ -519,7 +519,7 @@
         mc14: mc14 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp RIGHT>;
+            bindings = <&macro_press>, <&kp GLOBE &kp RIGHT>, <&macro_release>;
 
             label = "MC14";
         };
@@ -527,7 +527,7 @@
         mc15: mc15 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp N>;
+            bindings = <&macro_press>, <&kp GLOBE &kp N>, <&macro_release>;
 
             label = "MC15";
         };
@@ -535,7 +535,7 @@
         mc16: mc16 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp C>;
+            bindings = <&macro_press>, <&kp GLOBE &kp C>, <&macro_release>;
 
             label = "MC16";
         };
