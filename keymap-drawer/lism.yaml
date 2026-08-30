@@ -418,8 +418,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&TD08'
+  - '&TD09'
   - Sft+1
   - '['
   - Sft+3
