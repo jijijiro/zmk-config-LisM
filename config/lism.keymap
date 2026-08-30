@@ -795,7 +795,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LS(N6)  &kp LS(N8)        &kp LS(N9)
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LS(N4)  &kp LS(N5)        &kp EQUAL
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LS(N1)  &kp LEFT_BRACKET  &kp LS(N3)
+&trans  &trans  &trans  &trans  &trans                    &TD08   &TD09   &kp LS(N1)  &kp LEFT_BRACKET  &kp LS(N3)
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &trans            &trans
                 &trans  &trans  &trans                    &trans  &trans  &trans
             >;
