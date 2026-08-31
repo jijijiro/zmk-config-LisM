@@ -9,7 +9,7 @@ layers:
   - {t: ▽, type: trans}
   - Y
   - U
-  - I
+  - {t: I, h: '2'}
   - {t: O, h: '3'}
   - {t: A, h: '2'}
   - S
@@ -205,7 +205,7 @@ layers:
   - {t: ▽, type: trans}
   - Y
   - U
-  - I
+  - {t: I, h: '6'}
   - {t: O, h: '7'}
   - {t: A, h: '6'}
   - {t: S, h: GLOBE}
@@ -310,7 +310,7 @@ layers:
   - F8
   - F9
   - F10
-  - Gui+LBKT
+  - Gui+]
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
