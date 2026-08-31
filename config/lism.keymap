@@ -713,7 +713,7 @@
 
         layer_0 {
             bindings = <
-&lt 3 Q      &lt 2 W  &lt 1 E     &kp R       &kp T                                  &trans           &kp Y        &kp U       &kp I       &lt 3 O
+&lt 3 Q      &lt 2 W  &lt 1 E     &kp R       &kp T                                  &trans           &kp Y        &kp U       &lt 2 I     &lt 3 O
 &lt 2 A      &kp S    &mt LALT D  &mt LGUI F  &mt LCTRL G                            &trans           &mt LCTRL H  &mt LGUI J  &mt RALT K  &kp P
 &mt LSHFT Z  &lt 8 X  &kp C       &kp V       &kp B                                  &TD03            &TD04        &kp N       &kp M       &mt RSHFT L
 &trans       &trans   &trans      &kp UP      &lt 2 ENTER  &lt 1 SPACE    &lt 2 TAB  &lt 1 BACKSPACE  &trans       &trans      &trans      &trans
@@ -753,7 +753,7 @@
 
         layer_4 {
             bindings = <
-&lt 7 Q      &lt 6 W      &lt 5 E     &kp R        &kp T                                  &trans           &kp Y       &kp U        &kp I       &lt 7 O
+&lt 7 Q      &lt 6 W      &lt 5 E     &kp R        &kp T                                  &trans           &kp Y       &kp U        &lt 6 I     &lt 7 O
 &lt 6 A      &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                             &trans           &mt RGUI H  &mt RCTRL J  &mt RALT K  &mt GLOBE P
 &mt LSHFT Z  &lt 8 X      &kp C       &kp V        &kp B                                  &TD03            &TD04       &kp N        &kp M       &mt RSHFT L
 &trans       &trans       &trans      &kp UP       &lt 6 ENTER  &lt 5 SPACE    &lt 6 TAB  &lt 5 BACKSPACE  &trans      &trans       &trans      &trans
@@ -773,11 +773,11 @@
 
         layer_6 {
             bindings = <
-&mc12    &kp F2   &kp F3          &kp F4          &kp F5                                  &kp LG(T)         &kp LS(LC(TAB))  &kp UP    &kp LC(TAB)  &mt LG(R) LG(W)
-&kp F6   &kp F7   &kp F8          &kp F9          &kp F10                                 &kp LG(LBKT)      &kp LEFT         &kp DOWN  &kp RIGHT    &kp LG(F)
-&kp F11  &kp F12  &kp LG(LS(N4))  &trans          &trans                                  &kp LG(KP_MINUS)  &kp LG(KP_PLUS)  &trans    &trans       &trans
-&trans   &trans   &trans          &mmv MOVE_UP    &mc13            &mc14    &kp LG(LEFT)  &kp LG(RIGHT)     &trans           &trans    &trans       &trans
-                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                         &trans            &trans           &trans
+&mc12    &kp F2   &kp F3          &kp F4          &kp F5                                  &kp LG(T)              &kp LS(LC(TAB))  &kp UP    &kp LC(TAB)  &mt LG(R) LG(W)
+&kp F6   &kp F7   &kp F8          &kp F9          &kp F10                                 &kp LG(RIGHT_BRACKET)  &kp LEFT         &kp DOWN  &kp RIGHT    &kp LG(F)
+&kp F11  &kp F12  &kp LG(LS(N4))  &trans          &trans                                  &kp LG(KP_MINUS)       &kp LG(KP_PLUS)  &trans    &trans       &trans
+&trans   &trans   &trans          &mmv MOVE_UP    &mc13            &mc14    &kp LG(LEFT)  &kp LG(RIGHT)          &trans           &trans    &trans       &trans
+                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                         &trans                 &trans           &trans
             >;
         };
 
