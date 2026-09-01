@@ -64,7 +64,7 @@ layers:
   - '&TD16'
   - '&TD17'
   - '&TD18'
-  - Ctl+PgDn
+  - {t: Ctl+PgDn, h: '$$mdi:apple-keyboard-control$$'}
   - PG UP
   - PG DN
   - '4'
