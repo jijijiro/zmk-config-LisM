@@ -257,10 +257,10 @@ layers:
   - '8'
   - '9'
   - Gui+A
-  - Gui+S
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Gui+S, h: GLOBE}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
   - PG UP
   - PG DN
   - '4'
