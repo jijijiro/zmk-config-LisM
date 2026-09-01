@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD09";
             #binding-cells = <0>;
-            bindings = <&kp KP_MINUS>, <&kp KP_SLASH>;
+            bindings = <&mt KP_MINUS N0>, <&kp KP_SLASH>;
 
             tapping-term-ms = <300>;
         };
@@ -227,7 +227,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD17";
             #binding-cells = <0>;
-            bindings = <&none>, <&mc11>;
+            bindings = <&kp LALT>, <&mc11>;
 
             tapping-term-ms = <300>;
         };
@@ -236,7 +236,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD18";
             #binding-cells = <0>;
-            bindings = <&kp LC(PAGE_UP)>, <&mc07>;
+            bindings = <&mt LGUI LC(PAGE_UP)>, <&mc07>;
 
             tapping-term-ms = <300>;
         };
@@ -723,11 +723,11 @@
 
         layer_1 {
             bindings = <
-&TD10   &mc02      &mc03         &kp LC(HOME)  &TD14                                    &kp HOME   &kp END    &kp N7  &kp N8  &kp N9
-&TD15   &TD16      &TD17         &TD18         &kp LC(PAGE_DOWN)                        &kp PG_UP  &kp PG_DN  &kp N4  &kp N5  &kp N6
-&TD20   &kp LC(X)  &kp LC(C)     &TD23         &kp LC(B)                                &TD08      &TD09      &kp N1  &kp N2  &kp N3
-&trans  &trans     &trans        &kp C_VOL_UP  &kp ENTER          &kp SPACE    &kp TAB  &kp BSPC   &trans     &kp N0  &trans  &trans
-                   &kp C_BRI_DN  &kp C_VOL_DN  &kp C_BRI_UP                             &trans     &trans     &trans
+&TD10   &mc02      &mc03         &kp LC(HOME)  &TD14                                          &kp HOME   &kp END    &kp N7  &kp N8  &kp N9
+&TD15   &TD16      &TD17         &TD18         &mt LCTRL LC(PAGE_DOWN)                        &kp PG_UP  &kp PG_DN  &kp N4  &kp N5  &kp N6
+&TD20   &kp LC(X)  &kp LC(C)     &TD23         &kp LC(B)                                      &TD08      &TD09      &kp N1  &kp N2  &kp N3
+&trans  &trans     &trans        &kp C_VOL_UP  &kp ENTER                &kp SPACE    &kp TAB  &kp BSPC   &trans     &kp N0  &trans  &trans
+                   &kp C_BRI_DN  &kp C_VOL_DN  &kp C_BRI_UP                                   &trans     &trans     &trans
             >;
         };
 
