@@ -726,7 +726,7 @@
 &TD10   &mc02      &mc03         &kp LC(HOME)  &TD14                                    &kp HOME   &kp END    &kp N7  &kp N8  &kp N9
 &TD15   &TD16      &TD17         &TD18         &kp LC(PAGE_DOWN)                        &kp PG_UP  &kp PG_DN  &kp N4  &kp N5  &kp N6
 &TD20   &kp LC(X)  &kp LC(C)     &TD23         &kp LC(B)                                &TD08      &TD09      &kp N1  &kp N2  &kp N3
-&trans  &trans     &trans        &kp C_VOL_UP  &kp ENTER          &kp SPACE    &kp TAB  &kp BSPC   &trans     &trans  &trans  &trans
+&trans  &trans     &trans        &kp C_VOL_UP  &kp ENTER          &kp SPACE    &kp TAB  &kp BSPC   &trans     &kp N0  &trans  &trans
                    &kp C_BRI_DN  &kp C_VOL_DN  &kp C_BRI_UP                             &trans     &trans     &trans
             >;
         };
@@ -766,7 +766,7 @@
 &mc15      &trans     &trans        &trans        &mc16                               &kp HOME   &kp END    &kp N7  &kp N8  &kp N9
 &kp LG(A)  &kp LG(S)  &trans        &trans        &trans                              &kp PG_UP  &kp PG_DN  &kp N4  &kp N5  &kp N6
 &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)     &kp LG(B)                           &TD08      &TD09      &kp N1  &kp N2  &kp N3
-&trans     &trans     &trans        &kp C_VOL_UP  &kp ENTER     &kp SPACE    &kp TAB  &kp BSPC   &trans     &trans  &trans  &trans
+&trans     &trans     &trans        &kp C_VOL_UP  &kp ENTER     &kp SPACE    &kp TAB  &kp BSPC   &trans     &kp N0  &trans  &trans
                       &kp C_BRI_DN  &kp C_VOL_DN  &kp C_BRI_UP                        &trans     &trans     &trans
             >;
         };
