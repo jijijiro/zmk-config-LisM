@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD04";
             #binding-cells = <0>;
-            bindings = <&us_min>, <&kp LS(LEFT_BRACKET)>;
+            bindings = <&us_min>, <&kp LS(INT1)>;
 
             tapping-term-ms = <300>;
         };
