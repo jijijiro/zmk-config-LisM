@@ -29,7 +29,7 @@ layers:
   - '&TD03'
   - '&TD04'
   - N
-  - {t: L, h: '6'}
+  - {t: M, h: '6'}
   - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -176,7 +176,7 @@ layers:
   - '&TD03'
   - '&TD04'
   - N
-  - {t: L, h: '6'}
+  - {t: M, h: '6'}
   - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
