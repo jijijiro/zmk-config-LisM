@@ -773,7 +773,7 @@
             bindings = <
 &lt 2 Q      &lt 1 W  &lt 6 E     &kp R       &kp T                                        &trans       &kp Y        &lt 6 U     &lt 1 I     &lt 2 O
 &lt 1 A      &lt 2 S  &mt LALT D  &mt LGUI F  &mt LCTRL G                                  &trans       &mt RCTRL H  &mt RGUI J  &mt RALT K  &kp P
-&mt LSHFT Z  &lt 6 X  &kp C       &kp V       &kp B                                        &TD03        &TD04        &kp N       &lt 6 L     &mt RSHFT L
+&mt LSHFT Z  &lt 6 X  &kp C       &kp V       &kp B                                        &TD03        &TD04        &kp N       &lt 6 M     &mt RSHFT L
 &trans       &trans   &trans      &kp UP      &lt 2 LANG2  &lt 1 SPACE    &lt 2 BACKSPACE  &lt 1 LANG1  &trans       &trans      &trans      &trans
                       &kp LEFT    &kp DOWN    &kp RIGHT                                    &trans       &trans       &trans
             >;
@@ -803,7 +803,7 @@
             bindings = <
 &lt 5 Q      &lt 4 W      &lt 6 E     &kp R        &kp T                                        &trans       &kp Y       &lt 6 U      &lt 4 I     &lt 5 O
 &lt 4 A      &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                   &trans       &mt RGUI H  &mt RCTRL J  &mt RALT K  &mt GLOBE P
-&mt LSHFT Z  &lt 6 X      &kp C       &kp V        &kp B                                        &TD03        &TD04       &kp N        &lt 6 L     &mt RSHFT L
+&mt LSHFT Z  &lt 6 X      &kp C       &kp V        &kp B                                        &TD03        &TD04       &kp N        &lt 6 M     &mt RSHFT L
 &trans       &trans       &trans      &kp UP       &lt 2 LANG2  &lt 1 SPACE    &lt 2 BACKSPACE  &lt 1 LANG1  &trans      &trans       &trans      &trans
                           &kp LEFT    &kp DOWN     &kp RIGHT                                    &trans       &trans      &trans
             >;
