@@ -502,14 +502,16 @@
         iOS_00: iOS_00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp UP_ARROW>;
+            bindings = <&macro_pause_for_release>, <&kp GLOBE &kp UP_ARROW>;
+
             label = "IOS_00";
         };
 
         iOS_01: iOS_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp C>;
+            bindings = <&macro_pause_for_release>, <&kp GLOBE &kp C>;
+
             label = "IOS_01";
         };
 
