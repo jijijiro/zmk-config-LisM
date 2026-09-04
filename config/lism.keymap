@@ -502,28 +502,39 @@
         iOS_00: iOS_00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp UP_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp UP_ARROW>,
+                <&macro_wait_time 200>;
+
             label = "IOS_00";
         };
 
         iOS_01: iOS_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp C>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_wait_time 200>,
+                <&kp C>;
+
             label = "IOS_01";
         };
 
         iOS_02: iOS_02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp LEFT>;
+            bindings = <&macro_press>, <&kp GLOBE &kp LEFT>;
+
             label = "IOS_02";
         };
 
         iOS_03: iOS_03 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp RIGHT>;
+            bindings = <&macro_press>, <&kp GLOBE &kp RIGHT>;
+
             label = "IOS_03";
         };
     };
