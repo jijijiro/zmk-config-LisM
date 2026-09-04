@@ -502,10 +502,7 @@
         iOS_00: iOS_00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp GLOBE &kp UP_ARROW>,
-                <&macro_release>;
+            bindings = <&macro_press>, <&kp GLOBE &kp H>, <&macro_release>;
 
             label = "IOS_00";
         };
@@ -513,7 +510,7 @@
         iOS_01: iOS_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp C>, <&macro_release>;
+            bindings = <&macro_press>, <&kp GLOBE &kp UP>, <&macro_release>;
 
             label = "IOS_01";
         };
@@ -521,7 +518,7 @@
         iOS_02: iOS_02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp LEFT>, <&macro_release>;
+            bindings = <&macro_press>, <&kp GLOBE &kp C>, <&macro_release>;
 
             label = "IOS_02";
         };
@@ -529,9 +526,17 @@
         iOS_03: iOS_03 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp RIGHT>, <&macro_release>;
+            bindings = <&macro_press>, <&kp GLOBE &kp LEFT>, <&macro_release>;
 
             label = "IOS_03";
+        };
+
+        iOS_04: iOS_04 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp GLOBE &kp RIGHT>, <&macro_release>;
+
+            label = "IOS_04";
         };
     };
 
@@ -781,20 +786,20 @@
 
         layer_4 {
             bindings = <
-&trans           &trans           &trans          &trans          &trans                                       &kp HOME   &kp END             &kp N7        &kp N8       &lt 5 N9
-&kp LG(A)        &mt GLOBE LG(S)  &mt LALT LG(D)  &kp LCTRL       &kp LGUI                                     &kp PG_UP  &mt RGUI PAGE_DOWN  &mt RCTRL N4  &mt RALT N5  &mt GLOBE N6
-&mt LSHFT LG(Z)  &kp LG(X)        &kp LG(C)       &kp LG(V)       &kp LG(B)                                    &TD08      &kp N0              &kp N1        &kp N2       &mt RSHFT N3
-&trans           &trans           &trans          &mmv MOVE_UP    &kp LG(LC(Q))    &kp LG(H)    &kp BACKSPACE  &kp LANG2  &trans              &trans        &trans       &trans
-                                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                              &trans     &trans              &trans
+&trans           &trans           &trans          &trans          &trans                                     &kp HOME   &kp END             &kp N7        &kp N8       &lt 5 N9
+&kp LG(A)        &mt GLOBE LG(S)  &mt LALT LG(D)  &kp LCTRL       &kp LGUI                                   &kp PG_UP  &mt RGUI PAGE_DOWN  &mt RCTRL N4  &mt RALT N5  &mt GLOBE N6
+&mt LSHFT LG(Z)  &kp LG(X)        &kp LG(C)       &kp LG(V)       &kp LG(B)                                  &TD08      &kp N0              &kp N1        &kp N2       &mt RSHFT N3
+&trans           &trans           &trans          &mmv MOVE_UP    &kp LG(LC(Q))    &iOS_00    &kp BACKSPACE  &kp LANG2  &trans              &trans        &trans       &trans
+                                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                            &trans     &trans              &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&iOS_00                    &kp F1  &kp F2          &kp F3          &kp F4                                    &kp LG(T)              &kp LC(LS(TAB))  &kp UP    &kp LC(TAB)  &mt LG(R) LG(W)
-&iOS_01                    &kp F5  &kp F6          &kp F7          &kp F8                                    &kp LG(RIGHT_BRACKET)  &kp LEFT         &kp DOWN  &kp RIGHT    &kp F3
+&iOS_01                    &kp F1  &kp F2          &kp F3          &kp F4                                    &kp LG(T)              &kp LC(LS(TAB))  &kp UP    &kp LC(TAB)  &mt LG(R) LG(W)
+&iOS_02                    &kp F5  &kp F6          &kp F7          &kp F8                                    &kp LG(RIGHT_BRACKET)  &kp LEFT         &kp DOWN  &kp RIGHT    &kp F3
 &mt LG(LS(N3)) LG(LS(N4))  &kp F9  &kp F10         &kp F11         &kp F12                                   &kp LG(KP_MINUS)       &kp LG(KP_PLUS)  &trans    &trans       &trans
-&trans                     &trans  &trans          &msc SCRL_UP    &iOS_02          &iOS_03    &kp LG(LEFT)  &kp LG(RIGHT)          &trans           &trans    &trans       &trans
+&trans                     &trans  &trans          &msc SCRL_UP    &iOS_03          &iOS_04    &kp LG(LEFT)  &kp LG(RIGHT)          &trans           &trans    &trans       &trans
                                    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                           &trans                 &trans           &trans
             >;
         };
