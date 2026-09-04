@@ -232,7 +232,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Gui+Ctl+Q
-  - Gui+H
+  - '&iOS_00'
   - {t: '$$mdi:backspace$$', type: backspace}
   - LANG2
   - {t: ▽, type: trans}
@@ -246,7 +246,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '5':
-  - {t: '&iOS_00', type: held}
+  - {t: '&iOS_01', type: held}
   - F1
   - F2
   - F3
@@ -256,7 +256,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:keyboard-tab$$
   - {t: Gui+W, h: Gui+R}
-  - '&iOS_01'
+  - '&iOS_02'
   - F5
   - F6
   - F7
@@ -280,8 +280,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:pan-up$$
-  - '&iOS_02'
   - '&iOS_03'
+  - '&iOS_04'
   - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-right-bold$$
   - {t: ▽, type: trans}
