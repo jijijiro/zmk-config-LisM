@@ -504,7 +504,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE &kp UP_ARROW>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
                 <&macro_release>;
 
             label = "IOS_00";
@@ -513,7 +515,12 @@
         iOS_01: iOS_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp C>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>;
 
             label = "IOS_01";
         };
