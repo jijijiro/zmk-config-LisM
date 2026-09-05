@@ -502,7 +502,11 @@
         iOS_00: iOS_00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp H>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp H>,
+                <&macro_release>,
+                <&kp GLOBE>;
 
             label = "IOS_00";
         };
@@ -510,7 +514,11 @@
         iOS_01: iOS_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp UP>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp UP>,
+                <&macro_release>,
+                <&kp GLOBE>;
 
             label = "IOS_01";
         };
@@ -518,7 +526,11 @@
         iOS_02: iOS_02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp C>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp C>,
+                <&macro_release>,
+                <&kp GLOBE>;
 
             label = "IOS_02";
         };
@@ -526,7 +538,11 @@
         iOS_03: iOS_03 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp LEFT>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp LEFT>,
+                <&macro_release>,
+                <&kp GLOBE>;
 
             label = "IOS_03";
         };
@@ -534,7 +550,11 @@
         iOS_04: iOS_04 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp GLOBE &kp RIGHT>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp RIGHT>,
+                <&macro_release>,
+                <&kp GLOBE>;
 
             label = "IOS_04";
         };
