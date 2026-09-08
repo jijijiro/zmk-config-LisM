@@ -64,7 +64,7 @@
         us03_se: us03_se {
             compatible = "zmk,behavior-mod-morph";
             label = "US03_SE";
-            bindings = <&kp APOS>, <&kp SEMI>;
+            bindings = <&kp SEMI>, <&kp APOS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -73,7 +73,7 @@
         us04_ap: us04_ap {
             compatible = "zmk,behavior-mod-morph";
             label = "US04_AP";
-            bindings = <&kp LS(N2)>, <&kp LS(N7)>;
+            bindings = <&kp LS(N7)>, <&kp LS(N2)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -727,8 +727,8 @@
 &mc01   &TD11   &mc03           &mc04           &TD14                                            &kp N7        &kp N8       &kp N9       &TD04   &TD05
 &TD15   &TD16   &TD17           &TD18           &mt LCTRL LC(PAGE_DOWN)                          &mt RCTRL N4  &mt RGUI N5  &mt RALT N6  &TD06   &TD07
 &TD20   &TD21   &TD22           &TD23           &kp LC(B)                                        &kp N1        &kp N2       &kp N3       &TD08   &TD09
-&trans  &trans  &trans          &msc SCRL_UP    &kp LG(L)                &kp LA(F4)    &kp BSPC  &kp N0        &trans       &trans       &trans  &trans
-                &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                                  &trans        &trans       &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &kp LG(L)                &kp LA(F4)    &kp BSPC  &kp N0        &trans       &trans       &trans  &trans
+                &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                                  &trans        &trans       &trans
             >;
         };
 
@@ -737,8 +737,8 @@
 &kp LA(LC(TAB))        &kp F1  &kp F2          &kp F3          &kp F4                                      &kp LC(L)          &kp LC(LS(O))    &kp HOME          &mt LG(L) LC(T)  &mt LA(F4) LC(W)
 &kp LG(A)              &kp F5  &kp F6          &kp F7          &kp F8                                      &kp LA(LEFT)       &kp LS(LC(TAB))  &kp END           &kp LC(TAB)      &kp LC(R)
 &mt LG(P) PRINTSCREEN  &kp F9  &kp F10         &kp F11         &kp F12                                     &kp LC(F)          &kp LC(G)        &kp LC(KP_MINUS)  &kp LC(KP_PLUS)  &kp F11
-&trans                 &trans  &trans          &mmv MOVE_UP    &TD28            &TD29    &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans           &trans            &trans           &trans
-                               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                             &trans             &trans           &trans
+&trans                 &trans  &trans          &msc SCRL_UP    &TD28            &TD29    &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans           &trans            &trans           &trans
+                               &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                             &trans             &trans           &trans
             >;
         };
 
@@ -757,8 +757,8 @@
 &trans     &trans           &trans          &trans          &trans                               &kp N7       &kp N8        &kp N9       &TD04   &TD05
 &kp LG(A)  &mt GLOBE LG(S)  &mt LALT LG(D)  &kp LCTRL       &kp LGUI                             &mt RGUI N4  &mt RCTRL N5  &mt RALT N6  &TD06   &TD07
 &kp LG(Z)  &kp LG(X)        &kp LG(C)       &kp LG(V)       &kp LG(B)                            &kp N1       &kp N2        &kp N3       &TD08   &TD09
-&trans     &trans           &trans          &msc SCRL_UP    &kp LG(LC(Q))    &iOS00    &kp BSPC  &kp N0       &trans        &trans       &trans  &trans
-                            &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                      &trans       &trans        &trans
+&trans     &trans           &trans          &mmv MOVE_UP    &kp LG(LC(Q))    &iOS00    &kp BSPC  &kp N0       &trans        &trans       &trans  &trans
+                            &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                      &trans       &trans        &trans
             >;
         };
 
@@ -767,8 +767,8 @@
 &iOS01                     &kp F1  &kp F2          &kp F3          &kp F4                                   &kp LG(L)              &kp LA(LG(B))    &kp LG(UP)    &mt LG(LC(Q)) LG(T)  &mt LG(H) LG(W)
 &iOS02                     &kp F5  &kp F6          &kp F7          &kp F8                                   &kp LG(RIGHT_BRACKET)  &kp LS(LC(TAB))  &kp LG(DOWN)  &kp LC(TAB)          &kp LG(R)
 &mt LG(LS(N3)) LG(LS(N4))  &kp F9  &kp F10         &kp F11         &kp F12                                  &kp LG(F)              &kp LG(G)        &trans        &trans               &trans
-&trans                     &trans  &trans          &mmv MOVE_UP    &iOS03           &iOS04    &kp LG(LEFT)  &kp LG(RIGHT)          &trans           &trans        &trans               &trans
-                                   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                          &trans                 &trans           &trans
+&trans                     &trans  &trans          &msc SCRL_UP    &iOS03           &iOS04    &kp LG(LEFT)  &kp LG(RIGHT)          &trans           &trans        &trans               &trans
+                                   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                          &trans                 &trans           &trans
             >;
         };
 
