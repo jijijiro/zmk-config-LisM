@@ -155,7 +155,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD08";
             #binding-cells = <0>;
-            bindings = <&mt COMMA DOT>, <&us03_se>;
+            bindings = <&mt COMMA DOT>, <&kp APOS>;
 
             tapping-term-ms = <300>;
         };
