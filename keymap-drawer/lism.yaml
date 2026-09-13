@@ -378,9 +378,9 @@ combos:
   k: PgUp
 - p: [4, 14]
   k: PgDn
-- p: [12, 13]
+- p: [13, 12]
   k: $$mdi:arrow-up-bold$$
-- p: [22, 23]
+- p: [23, 22]
   k: $$mdi:arrow-down-bold$$
 - p: [12, 22]
   k: $$mdi:arrow-left-bold$$
@@ -390,7 +390,6 @@ combos:
   k: $$mdi:arrow-up-bold$$
 - p: [26, 27]
   k: $$mdi:arrow-down-bold$$
-  l: ['0', '3']
 - p: [16, 26]
   k: $$mdi:arrow-left-bold$$
 - p: [17, 27]
@@ -398,14 +397,11 @@ combos:
 - p: [15, 16]
   k: '&mc00'
 - p: [26, 25]
-  k: .
-  l: ['1', '4']
-- p: [27, 26]
-  k: ','
-  l: ['1', '4']
-- p: [27, 28]
   k: APOS
-  l: ['1', '4']
+- p: [27, 28]
+  k: ','
+- p: [28, 29]
+  k: .
 - p: [20, 21, 22]
   k: $$mdi:progress-download$$
   l: ['6']
