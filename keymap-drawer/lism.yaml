@@ -390,6 +390,7 @@ combos:
   k: $$mdi:arrow-up-bold$$
 - p: [26, 27]
   k: $$mdi:arrow-down-bold$$
+  l: ['0', '3']
 - p: [16, 26]
   k: $$mdi:arrow-left-bold$$
 - p: [17, 27]
