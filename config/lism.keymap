@@ -156,8 +156,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD08";
             #binding-cells = <0>;
-            bindings = <&mt COMMA DOT>, <&kp APOS>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -165,8 +164,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD09";
             #binding-cells = <0>;
-            bindings = <&mt RSHFT ENTER>, <&kp TAB>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -698,12 +696,30 @@
         };
 
         combo26 {
+            bindings = <&kp DOT>;
+            key-positions = <26 25>;
+            layers = <1 4>;
+        };
+
+        combo27 {
+            bindings = <&kp COMMA>;
+            key-positions = <27 26>;
+            layers = <1 4>;
+        };
+
+        combo28 {
+            bindings = <&kp APOS>;
+            key-positions = <27 28>;
+            layers = <1 4>;
+        };
+
+        combo29 {
             bindings = <&bootloader>;
             key-positions = <20 21 22>;
             layers = <6>;
         };
 
-        combo27 {
+        combo30 {
             bindings = <&bootloader>;
             key-positions = <27 28 29>;
             layers = <6>;
@@ -715,9 +731,9 @@
 
         layer_0 {
             bindings = <
-&lt 2 Q      &lt 1 W  &kp E       &kp R       &lt 6 T                                      &lt 6 Y      &kp U       &kp I       &lt 1 O  &lt 2 P
-&lt 1 A      &lt 6 S  &mt LALT D  &mt LGUI F  &mt LCTRL G                                  &mt RCTRL H  &mt RGUI J  &mt RALT K  &kp L    &TD00
-&mt LSHFT Z  &lt 6 X  &mt CAPS C  &kp V       &kp B                                        &mt LANG2 N  &kp M       &TD01       &TD02    &TD03
+&lt 2 Q      &lt 1 W  &kp E       &kp R       &lt 6 T                                      &lt 6 Y      &kp U       &kp I       &lt 1 O  &lt 2 L
+&lt 1 A      &lt 6 S  &mt LALT D  &mt LGUI F  &mt LCTRL G                                  &mt RCTRL H  &mt RGUI J  &mt RALT K  &kp P    &TD03
+&mt LSHFT Z  &lt 6 X  &mt CAPS C  &kp V       &kp B                                        &TD00        &kp N       &kp M       &TD01    &TD02
 &trans       &trans   &trans      &kp UP      &lt 2 LANG2  &lt 1 SPACE    &lt 1 BACKSPACE  &lt 2 LANG1  &trans      &trans      &trans   &trans
                       &kp LEFT    &kp DOWN    &kp RIGHT                                    &trans       &trans      &trans
             >;
@@ -725,10 +741,10 @@
 
         layer_1 {
             bindings = <
-&mc01   &TD11   &mc03           &mc04           &TD14                                            &kp N7        &kp N8       &kp N9       &TD04   &TD05
-&TD15   &TD16   &TD17           &TD18           &mt LCTRL LC(PAGE_DOWN)                          &mt RCTRL N4  &mt RGUI N5  &mt RALT N6  &TD06   &TD07
-&TD20   &TD21   &TD22           &TD23           &kp LC(B)                                        &kp N1        &kp N2       &kp N3       &TD08   &TD09
-&trans  &trans  &trans          &mmv MOVE_UP    &kp LG(L)                &kp LA(F4)    &kp BSPC  &kp N0        &trans       &trans       &trans  &trans
+&mc01   &TD11   &mc03           &mc04           &TD14                                            &kp N7        &kp N8       &kp N9       &TD04    &TD05
+&TD15   &TD16   &TD17           &TD18           &mt LCTRL LC(PAGE_DOWN)                          &mt RCTRL N4  &mt RGUI N5  &mt RALT N6  &TD06    &TD07
+&TD20   &TD21   &TD22           &TD23           &kp LC(B)                                        &kp N1        &kp N2       &kp N3       &kp TAB  &mt RSHFT ENTER
+&trans  &trans  &trans          &mmv MOVE_UP    &kp LG(L)                &kp LA(F4)    &kp BSPC  &kp N0        &trans       &trans       &trans   &trans
                 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                                  &trans        &trans       &trans
             >;
         };
@@ -745,9 +761,9 @@
 
         layer_3 {
             bindings = <
-&lt 5 Q      &lt 4 W      &kp E       &kp R        &lt 6 T                                      &lt 6 Y      &kp U        &kp I       &lt 4 O      &lt 5 P
-&lt 4 A      &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                   &mt RGUI H   &mt RCTRL J  &mt RALT K  &mt GLOBE L  &TD00
-&mt LSHFT Z  &lt 6 X      &mt CAPS C  &kp V        &kp B                                        &mt LANG2 N  &kp M        &TD01       &TD02        &TD03
+&lt 5 Q      &lt 4 W      &kp E       &kp R        &lt 6 T                                      &lt 6 Y      &kp U        &kp I       &lt 4 O      &lt 5 L
+&lt 4 A      &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                   &mt RGUI H   &mt RCTRL J  &mt RALT K  &mt GLOBE P  &TD03
+&mt LSHFT Z  &lt 6 X      &mt CAPS C  &kp V        &kp B                                        &TD00        &kp N        &kp M       &TD01        &TD02
 &trans       &trans       &trans      &kp UP       &lt 5 LANG2  &lt 4 SPACE    &lt 4 BACKSPACE  &lt 5 LANG1  &trans       &trans      &trans       &trans
                           &kp LEFT    &kp DOWN     &kp RIGHT                                    &trans       &trans       &trans
             >;
@@ -755,10 +771,10 @@
 
         layer_4 {
             bindings = <
-&trans     &trans           &trans          &trans          &trans                               &kp N7       &kp N8        &kp N9       &TD04   &TD05
-&kp LG(A)  &mt GLOBE LG(S)  &mt LALT LG(D)  &kp LCTRL       &kp LGUI                             &mt RGUI N4  &mt RCTRL N5  &mt RALT N6  &TD06   &TD07
-&kp LG(Z)  &kp LG(X)        &kp LG(C)       &kp LG(V)       &kp LG(B)                            &kp N1       &kp N2        &kp N3       &TD08   &TD09
-&trans     &trans           &trans          &mmv MOVE_UP    &kp LG(LC(Q))    &iOS00    &kp BSPC  &kp N0       &trans        &trans       &trans  &trans
+&trans     &trans           &trans          &trans          &trans                               &kp N7       &kp N8        &kp N9       &TD04    &TD05
+&kp LG(A)  &mt GLOBE LG(S)  &mt LALT LG(D)  &kp LCTRL       &kp LGUI                             &mt RGUI N4  &mt RCTRL N5  &mt RALT N6  &TD06    &TD07
+&kp LG(Z)  &kp LG(X)        &kp LG(C)       &kp LG(V)       &kp LG(B)                            &kp N1       &kp N2        &kp N3       &kp TAB  &mt RSHFT ENTER
+&trans     &trans           &trans          &mmv MOVE_UP    &kp LG(LC(Q))    &iOS00    &kp BSPC  &kp N0       &trans        &trans       &trans   &trans
                             &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                      &trans       &trans        &trans
             >;
         };
