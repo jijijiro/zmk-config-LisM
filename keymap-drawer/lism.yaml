@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - {t: O, h: '1'}
-  - {t: L, h: '2'}
+  - {t: P, h: '2'}
   - {t: A, h: '1'}
   - {t: S, h: '6'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -19,7 +19,7 @@ layers:
   - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - P
+  - L
   - '&TD00'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
@@ -157,7 +157,7 @@ layers:
   - U
   - I
   - {t: O, h: '4'}
-  - {t: L, h: '5'}
+  - {t: P, h: '5'}
   - {t: A, h: '4'}
   - {t: S, h: GLOBE}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -166,7 +166,7 @@ layers:
   - {t: H, h: '$$mdi:apple-keyboard-command$$'}
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: P, h: GLOBE}
+  - {t: L, h: GLOBE}
   - '&TD00'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
