@@ -24,10 +24,10 @@ layers:
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
   - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
-  - V
-  - B
+  - {t: V, h: LANG2}
+  - {t: B, h: LANG1}
   - {t: N, h: LANG2}
-  - M
+  - {t: M, h: LANG1}
   - '&TD01'
   - '&TD02'
   - '&TD03'
@@ -35,10 +35,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
-  - {t: LANG2, h: '2'}
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:backspace$$', h: '1'}
-  - {t: LANG1, h: '2'}
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
