@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - {t: O, h: '1'}
-  - {t: P, h: '2'}
+  - {t: L, h: '2'}
   - {t: A, h: '1'}
   - {t: S, h: '6'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -19,7 +19,7 @@ layers:
   - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - L
+  - P
   - '&TD00'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
@@ -157,7 +157,7 @@ layers:
   - U
   - I
   - {t: O, h: '4'}
-  - {t: P, h: '5'}
+  - {t: L, h: '5'}
   - {t: A, h: '4'}
   - {t: S, h: GLOBE}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -166,15 +166,15 @@ layers:
   - {t: H, h: '$$mdi:apple-keyboard-command$$'}
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: GLOBE}
+  - {t: P, h: GLOBE}
   - '&TD00'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
   - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
-  - V
-  - B
+  - {t: V, h: LANG2}
+  - {t: B, h: LANG1}
   - {t: N, h: LANG2}
-  - M
+  - {t: M, h: LANG1}
   - '&TD01'
   - '&TD02'
   - '&TD03'
@@ -182,10 +182,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
-  - {t: LANG2, h: '5'}
+  - {t: '$$mdi:keyboard-return$$', h: '5'}
   - {t: '$$mdi:keyboard-space$$', h: '4'}
   - {t: '$$mdi:backspace$$', h: '4'}
-  - {t: LANG1, h: '5'}
+  - {t: '$$mdi:keyboard-tab$$', h: '5'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
