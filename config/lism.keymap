@@ -576,17 +576,17 @@
         };
 
         combo02 {
-            bindings = <&kp ENTER>;
+            bindings = <&kp LANG2>;
             key-positions = <34 35>;
         };
 
         combo03 {
-            bindings = <&kp ESC>;
+            bindings = <&none>;
             key-positions = <8 9>;
         };
 
         combo04 {
-            bindings = <&kp TAB>;
+            bindings = <&kp LANG1>;
             key-positions = <36 37>;
         };
 
@@ -728,11 +728,11 @@
 
         layer_0 {
             bindings = <
-&lt 2 Q      &lt 1 W  &kp E       &kp R        &lt 6 T                                      &lt 6 Y      &kp U        &kp I       &lt 1 O  &lt 2 L
-&lt 1 A      &lt 6 S  &mt LALT D  &mt LGUI F   &mt LCTRL G                                  &mt RCTRL H  &mt RGUI J   &mt RALT K  &kp P    &TD00
-&mt LSHFT Z  &lt 6 X  &mt CAPS C  &mt LANG2 V  &mt LANG1 B                                  &mt LANG2 N  &mt LANG1 M  &TD01       &TD02    &TD03
-&trans       &trans   &trans      &kp UP       &lt 2 ENTER  &lt 1 SPACE    &lt 1 BACKSPACE  &lt 2 TAB    &trans       &trans      &trans   &trans
-                      &kp LEFT    &kp DOWN     &kp RIGHT                                    &trans       &trans       &trans
+&lt 2 Q      &lt 1 W  &kp E       &kp R       &lt 6 T                                      &lt 6 Y      &kp U       &kp I       &lt 1 O  &lt 2 L
+&lt 1 A      &lt 6 S  &mt LALT D  &mt LGUI F  &mt LCTRL G                                  &mt RCTRL H  &mt RGUI J  &mt RALT K  &kp P    &TD00
+&mt LSHFT Z  &lt 6 X  &mt CAPS C  &kp V       &kp B                                        &kp N        &kp M       &TD01       &TD02    &TD03
+&trans       &trans   &trans      &kp UP      &lt 2 ENTER  &lt 1 SPACE    &lt 1 BACKSPACE  &lt 2 TAB    &trans      &trans      &trans   &trans
+                      &kp LEFT    &kp DOWN    &kp RIGHT                                    &trans       &trans      &trans
             >;
         };
 
@@ -758,11 +758,11 @@
 
         layer_3 {
             bindings = <
-&lt 5 Q      &lt 4 W      &kp E       &kp R        &lt 6 T                                      &lt 6 Y      &kp U        &kp I       &lt 4 O      &lt 5 L
-&lt 4 A      &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                   &mt RGUI H   &mt RCTRL J  &mt RALT K  &mt GLOBE P  &TD00
-&mt LSHFT Z  &lt 6 X      &mt CAPS C  &mt LANG2 V  &mt LANG1 B                                  &mt LANG2 N  &mt LANG1 M  &TD01       &TD02        &TD03
-&trans       &trans       &trans      &kp UP       &lt 5 ENTER  &lt 4 SPACE    &lt 4 BACKSPACE  &lt 5 TAB    &trans       &trans      &trans       &trans
-                          &kp LEFT    &kp DOWN     &kp RIGHT                                    &trans       &trans       &trans
+&lt 5 Q      &lt 4 W      &kp E       &kp R        &lt 6 T                                      &lt 6 Y     &kp U        &kp I       &lt 4 O      &lt 5 L
+&lt 4 A      &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                   &mt RGUI H  &mt RCTRL J  &mt RALT K  &mt GLOBE P  &TD00
+&mt LSHFT Z  &lt 6 X      &mt CAPS C  &kp V        &kp B                                        &kp N       &kp M        &TD01       &TD02        &TD03
+&trans       &trans       &trans      &kp UP       &lt 5 ENTER  &lt 4 SPACE    &lt 4 BACKSPACE  &lt 5 TAB   &trans       &trans      &trans       &trans
+                          &kp LEFT    &kp DOWN     &kp RIGHT                                    &trans      &trans       &trans
             >;
         };
 
