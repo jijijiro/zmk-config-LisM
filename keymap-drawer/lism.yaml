@@ -24,10 +24,10 @@ layers:
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
   - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: V, h: LANG2}
-  - {t: B, h: LANG1}
-  - {t: N, h: LANG2}
-  - {t: M, h: LANG1}
+  - V
+  - B
+  - N
+  - M
   - '&TD01'
   - '&TD02'
   - '&TD03'
@@ -171,10 +171,10 @@ layers:
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
   - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
-  - {t: V, h: LANG2}
-  - {t: B, h: LANG1}
-  - {t: N, h: LANG2}
-  - {t: M, h: LANG1}
+  - V
+  - B
+  - N
+  - M
   - '&TD01'
   - '&TD02'
   - '&TD03'
@@ -349,11 +349,11 @@ combos:
 - p: [10, 11]
   k: $$mdi:keyboard-tab$$
 - p: [34, 35]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: LANG2
 - p: [8, 9]
-  k: $$mdi:keyboard-esc$$
+  k: ''
 - p: [36, 37]
-  k: $$mdi:keyboard-tab$$
+  k: LANG1
 - p: [0, 10]
   k: $$mdi:backspace-reverse-outline$$
 - p: [10, 20]
