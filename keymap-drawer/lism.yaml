@@ -20,29 +20,29 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - P
-  - '&TD00'
+  - {t: 'Sft+[', s: Sft+=}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
-  - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
+  - C
   - V
   - B
+  - '&TD00'
   - N
   - M
-  - '&TD01'
   - '&TD02'
   - '&TD03'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-caps$$'}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:backspace$$', h: '1'}
   - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ']'
+  - NON US HASH
+  - '&TD06'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -55,43 +55,43 @@ layers:
   - '&mc03'
   - '&mc04'
   - '&TD14'
+  - HOME
+  - END
   - '7'
   - '8'
   - '9'
-  - '&TD04'
-  - '&TD05'
-  - '&TD15'
-  - '&TD16'
-  - '&TD17'
+  - Ctl+A
+  - Ctl+S
+  - {t: Ctl+D, h: '$$mdi:apple-keyboard-option$$'}
   - '&TD18'
   - {t: Ctl+PgDn, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '6', h: '$$mdi:apple-keyboard-option$$'}
-  - '&TD06'
-  - '&TD07'
+  - {t: PG UP, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: PG DN, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
+  - '5'
+  - '6'
   - '&TD20'
   - '&TD21'
   - '&TD22'
   - '&TD23'
   - Ctl+B
+  - '&TD07'
+  - '&TD08'
   - '1'
   - '2'
   - '3'
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mc09'
+  - '&mc10'
+  - '&mc11'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Gui+L
   - Alt+F4
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&TD09'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -167,29 +167,29 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: P, h: GLOBE}
-  - '&TD00'
+  - {t: 'Sft+[', s: Sft+=}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '6'}
-  - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
+  - C
   - V
   - B
+  - '&TD00'
   - N
   - M
-  - '&TD01'
   - '&TD02'
   - '&TD03'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-caps$$'}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:keyboard-return$$', h: '5'}
   - {t: '$$mdi:keyboard-space$$', h: '4'}
   - {t: '$$mdi:backspace$$', h: '4'}
   - {t: '$$mdi:keyboard-tab$$', h: '5'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ']'
+  - NON US HASH
+  - '&TD06'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -202,31 +202,31 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - HOME
+  - END
   - '7'
   - '8'
   - '9'
-  - '&TD04'
-  - '&TD05'
   - Gui+A
   - {t: Gui+S, h: GLOBE}
   - {t: Gui+D, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '6', h: '$$mdi:apple-keyboard-option$$'}
-  - '&TD06'
-  - '&TD07'
+  - {t: PG UP, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: PG DN, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '5', h: GLOBE}
+  - '6'
   - Gui+Z
   - Gui+X
   - Gui+C
   - Gui+V
   - Gui+B
+  - '&TD07'
+  - '&TD08'
   - '1'
   - '2'
   - '3'
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -234,11 +234,11 @@ layers:
   - Gui+Ctl+Q
   - '&iOS00'
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&TD09'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -300,12 +300,14 @@ layers:
   - '&bt03'
   - '&bt02'
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Sft+6
   - Sft+8
   - Sft+9
-  - Sft+]
-  - Sft+NON US HASH
   - Gui+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -313,8 +315,8 @@ layers:
   - Sft+4
   - Sft+5
   - '='
-  - ']'
-  - NON US HASH
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -323,8 +325,6 @@ layers:
   - Sft+1
   - '['
   - Sft+3
-  - Sft+[
-  - Sft+=
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,7 +332,7 @@ layers:
   - '&bt01'
   - '&bt00'
   - '&bt00'
-  - '&bt02'
+  - '&bt01'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -397,11 +397,13 @@ combos:
 - p: [15, 16]
   k: '&mc00'
 - p: [26, 25]
-  k: APOS
-- p: [27, 28]
-  k: ','
-- p: [28, 29]
-  k: .
+  k: ''
+- p: [0, 1, 2]
+  k: BT CLR
+  l: ['6']
+- p: [9, 8, 7]
+  k: BT CLR ALL
+  l: ['6']
 - p: [20, 21, 22]
   k: $$mdi:progress-download$$
   l: ['6']
