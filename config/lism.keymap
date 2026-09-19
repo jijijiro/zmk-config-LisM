@@ -626,7 +626,7 @@
 
         combo12 {
             bindings = <&kp ENTER>;
-            key-positions = <29 41>;
+            key-positions = <29 19>;
         };
 
         combo13 {
