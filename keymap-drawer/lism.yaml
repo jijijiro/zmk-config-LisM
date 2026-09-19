@@ -35,10 +35,10 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:arrow-up-bold$$
-  - {t: LANG2, h: '2'}
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - {t: '$$mdi:backspace$$', h: '2'}
-  - {t: LANG1, h: '1'}
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
+  - {t: '$$mdi:backspace$$', h: '1'}
   - {t: ▽, type: trans}
   - '&TD04'
   - '&TD05'
@@ -182,10 +182,10 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:arrow-up-bold$$
-  - {t: LANG2, h: '5'}
+  - {t: '$$mdi:keyboard-return$$', h: '5'}
   - {t: '$$mdi:keyboard-space$$', h: '4'}
-  - {t: '$$mdi:backspace$$', h: '2'}
-  - {t: LANG1, h: '4'}
+  - {t: '$$mdi:keyboard-tab$$', h: '5'}
+  - {t: '$$mdi:backspace$$', h: '4'}
   - {t: ▽, type: trans}
   - '&TD04'
   - '&TD05'
@@ -349,11 +349,11 @@ combos:
 - p: [10, 11]
   k: $$mdi:keyboard-tab$$
 - p: [34, 35]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: LANG2
 - p: [8, 9]
   k: '&mc00'
 - p: [36, 37]
-  k: $$mdi:keyboard-tab$$
+  k: LANG1
 - p: [0, 10]
   k: $$mdi:backspace-reverse-outline$$
 - p: [10, 20]
