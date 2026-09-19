@@ -368,7 +368,7 @@ combos:
   k: $$mdi:mouse-right-click-outline$$
 - p: [9, 19]
   k: $$mdi:backspace-reverse-outline$$
-- p: [29, 41]
+- p: [29, 19]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [3, 4]
   k: HOME
