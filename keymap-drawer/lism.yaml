@@ -12,7 +12,7 @@ layers:
   - I
   - {t: O, h: '2'}
   - {t: A, h: '6'}
-  - {t: S, h: '7'}
+  - {t: S, h: '6'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - {t: G, h: '$$mdi:apple-keyboard-control$$'}
@@ -35,10 +35,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LANG2, h: '2'}
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - {t: '$$mdi:backspace$$', h: '2'}
-  - {t: LANG1, h: '1'}
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
+  - {t: '$$mdi:backspace$$', h: '1'}
   - {t: ▽, type: trans}
   - '&TD04'
   - '&TD05'
@@ -238,7 +238,7 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   - '&TD09'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -305,7 +305,7 @@ layers:
   - '&bt03'
   - '&bt04'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+T
   - VOL DN
   - VOL UP
   - {t: ▽, type: trans}
@@ -343,55 +343,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '7':
-  - {t: ▽, type: trans}
-  - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
-  - {t: ▽, type: trans}
-  - Gui+T
-  - {t: '$$mdi:mouse-right-click-outline$$', type: held}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
@@ -404,9 +355,9 @@ combos:
   k: $$mdi:apple-keyboard-caps$$
   l: ['3']
 - p: [34, 35]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: LANG2
 - p: [36, 37]
-  k: $$mdi:keyboard-tab$$
+  k: LANG1
 - p: [8, 9]
   k: '&mc00'
 - p: [0, 10]
