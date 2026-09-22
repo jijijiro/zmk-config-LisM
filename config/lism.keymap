@@ -4,9 +4,9 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-    input-processors = 
-        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_temp_layer 7 1500>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_temp_layer 7 1500>;
 
         scroller {
             layers = <2 5>;
@@ -190,8 +190,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD10";
             #binding-cells = <0>;
-            bindings = <&lt 2 DEL>, <&mc05>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -199,7 +198,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD11";
             #binding-cells = <0>;
-            bindings = <&mc01>, <&kp LC(LS(F1))>;
+            bindings = <&mc02>, <&kp LC(LS(F1))>;
 
             tapping-term-ms = <300>;
         };
@@ -224,7 +223,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD14";
             #binding-cells = <0>;
-            bindings = <&mc04>, <&mc06>;
+            bindings = <&mc05>, <&mc06>;
 
             tapping-term-ms = <300>;
         };
@@ -757,7 +756,7 @@
 
         layer_1 {
             bindings = <
-&TD10   &TD11      &mc02      &mc03   &TD14                                       &kp HOME   &kp END          &kp N7       &kp N8       &lt 2 N9
+&mc01   &TD11      &mc03      &mc04   &TD14                                       &kp HOME   &kp END          &kp N7       &kp N8       &lt 2 N9
 &TD15   &TD16      &TD17      &TD18   &mt LCTRL LC(PG_DN)                         &kp PG_UP  &mt RCTRL PG_DN  &mt RGUI N4  &mt RALT N5  &kp N6
 &TD20   &kp LC(X)  &kp LC(C)  &TD23   &kp LC(B)                                   &TD07      &TD08            &kp N1       &kp N2       &mt RSHFT N3
 &trans  &trans     &trans     &trans  &kp LG(L)            &kp LA(F4)    &kp TAB  &kp BSPC   &trans           &kp N0       &TD09        &kp TAB
