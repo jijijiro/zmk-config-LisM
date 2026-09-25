@@ -50,10 +50,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '1':
-  - '&mc01'
+  - '&TD10'
   - {t: '&TD11', type: held}
+  - '&mc02'
   - '&mc03'
-  - '&mc04'
   - '&TD14'
   - HOME
   - END
@@ -91,7 +91,7 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   - '&TD09'
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -238,7 +238,7 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   - '&TD09'
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -405,4 +405,4 @@ combos:
 - p: [19, 29]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [29, 41]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: $$mdi:keyboard-tab$$
