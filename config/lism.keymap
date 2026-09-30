@@ -730,6 +730,11 @@
             bindings = <&kp ENTER>;
             key-positions = <19 29>;
         };
+
+        combo26 {
+            bindings = <&tog 1>;
+            key-positions = <40 41>;
+        };
     };
 
     keymap {
