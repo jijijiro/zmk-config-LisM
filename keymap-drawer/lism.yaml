@@ -400,3 +400,5 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [19, 29]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [40, 41]
+  k: {t: '1', h: toggle}
