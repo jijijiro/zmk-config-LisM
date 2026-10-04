@@ -34,7 +34,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - {t: 'Sft+$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ▽, type: trans}
+  - {t: A, h: toggle}
   - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:keyboard-tab$$', h: '2'}

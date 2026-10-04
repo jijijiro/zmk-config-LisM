@@ -346,9 +346,10 @@ path.combo { stroke: #7f7f7f; }
 <use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-option"/>
 </g>
-<g transform="translate(196, 196)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-20" y="-20" width="41" height="41" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(196, 196)" class="key keypos-33">
+<rect rx="6" ry="6" x="-20" y="-20" width="41" height="41" class="key"/>
+<text x="0" y="0" class="key tap">A</text>
+<text x="0" y="18" class="key hold">toggle</text>
 </g>
 <g transform="translate(252, 196)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
