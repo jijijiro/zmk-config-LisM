@@ -1,20 +1,5 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball_split>;
-
-        scroller {
-            layers = <2 5>;
-            input-processors =
-                <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-                <&zip_xy_to_scroll_mapper>,
-                <&zip_scroll_scaler 1 16>;
-        };
-    };
-};
-
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -24,14 +9,14 @@
 
 &mt {
     tapping-term-ms = <300>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
     require-prior-idle-ms = <200>;
 };
 
 &lt {
     tapping-term-ms = <300>;
     require-prior-idle-ms = <200>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
 };
 
 / {
@@ -107,7 +92,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD01";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&us_min>, <&us_pl>;
+
             tapping-term-ms = <300>;
         };
 
@@ -115,7 +101,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD02";
             #binding-cells = <0>;
-            bindings = <&us_pl>, <&kp RIGHT_BRACKET>;
+            bindings = <&kp COMMA>, <&us_se>;
 
             tapping-term-ms = <300>;
         };
@@ -124,7 +110,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD03";
             #binding-cells = <0>;
-            bindings = <&us_min>, <&mt LS(EQUAL) NON_US_HASH>;
+            bindings = <&kp DOT>, <&us_ap>;
 
             tapping-term-ms = <300>;
         };
@@ -133,7 +119,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD04";
             #binding-cells = <0>;
-            bindings = <&mt LS(N1) SLASH>, <&kp INT3>;
+            bindings = <&mt RSHFT SLASH>, <&us_bq>;
 
             tapping-term-ms = <300>;
         };
@@ -142,8 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD05";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&us_se>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -151,8 +136,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD06";
             #binding-cells = <0>;
-            bindings = <&mt LS(LEFT_BRACKET) DOT>, <&us_ap>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -160,8 +144,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD07";
             #binding-cells = <0>;
-            bindings = <&kp KP_PLUS>, <&kp ASTRK>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -169,8 +152,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD08";
             #binding-cells = <0>;
-            bindings = <&kp KP_MINUS>, <&kp KP_SLASH>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -178,7 +160,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD09";
             #binding-cells = <0>;
-            bindings = <&mt COMMA DOT>, <&kp APOS>;
+            bindings = <&mt LANG1 DOT>, <&mt COMMA APOS>;
 
             tapping-term-ms = <300>;
         };
@@ -273,7 +255,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD20";
             #binding-cells = <0>;
-            bindings = <&mt LSHFT LC(Z)>, <&kp LC(N1)>;
+            bindings = <&kp LC(Z)>, <&kp LC(N1)>;
 
             tapping-term-ms = <300>;
         };
@@ -298,8 +280,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD23";
             #binding-cells = <0>;
-            bindings = <&kp LC(V)>, <&mc08>;
-
+            bindings = <&none>;
             tapping-term-ms = <300>;
         };
 
@@ -315,7 +296,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD25";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(V)>, <&mc08>;
+
             tapping-term-ms = <300>;
         };
 
@@ -339,7 +321,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD28";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(LEFT))>, <&kp LA(LC(LG(LEFT)))>;
+            bindings = <&kp LC(LG(LEFT))>, <&kp LC(LG(LA(LEFT)))>;
 
             tapping-term-ms = <300>;
         };
@@ -348,7 +330,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD29";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(RIGHT))>, <&kp LA(LC(LG(RIGHT)))>;
+            bindings = <&kp LC(LG(RIGHT))>, <&kp LC(LG(LA(RIGHT)))>;
 
             tapping-term-ms = <300>;
         };
@@ -381,7 +363,7 @@
         bt01: bt01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1 &to 3>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1 &to 0>;
             label = "BT01";
         };
 
@@ -555,7 +537,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE &kp A>,
+                <&kp GLOBE &kp LEFT>,
                 <&macro_release>,
                 <&kp GLOBE>;
 
@@ -567,173 +549,32 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp GLOBE &kp LEFT>,
+                <&kp GLOBE &kp RIGHT>,
                 <&macro_release>,
                 <&kp GLOBE>;
 
             label = "IOS04";
         };
 
-        iOS05: iOS05 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp GLOBE &kp RIGHT>,
-                <&macro_release>,
-                <&kp GLOBE>;
-
-            label = "IOS05";
-        };
-
-        mc0: mc0 {
+        mc99: mc99 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB1 &mkp MB1>;
-            label = "MC0";
+            label = "MC99";
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo00 {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-
-        combo01 {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-        };
-
-        combo02 {
-            bindings = <&none>;
-            key-positions = <20 21>;
-        };
-
-        combo03 {
-            bindings = <&mo 6>;
+        combo1 {
+            bindings = <&mo 8>;
             key-positions = <34 35>;
         };
 
-        combo04 {
-            bindings = <&mo 6>;
+        combo2 {
+            bindings = <&mo 8>;
             key-positions = <36 37>;
-        };
-
-        combo05 {
-            bindings = <&mc00>;
-            key-positions = <8 9>;
-        };
-
-        combo06 {
-            bindings = <&kp DEL>;
-            key-positions = <0 10>;
-        };
-
-        combo07 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 20>;
-        };
-
-        combo08 {
-            bindings = <&mkp MB2>;
-            key-positions = <1 11>;
-        };
-
-        combo09 {
-            bindings = <&mkp MB1>;
-            key-positions = <2 12>;
-        };
-
-        combo10 {
-            bindings = <&mc0>;
-            key-positions = <12 22>;
-        };
-
-        combo11 {
-            bindings = <&kp HOME>;
-            key-positions = <3 4>;
-        };
-
-        combo12 {
-            bindings = <&kp END>;
-            key-positions = <13 14>;
-        };
-
-        combo13 {
-            bindings = <&kp UP>;
-            key-positions = <13 14>;
-        };
-
-        combo14 {
-            bindings = <&kp DOWN>;
-            key-positions = <23 24>;
-        };
-
-        combo15 {
-            bindings = <&kp LEFT>;
-            key-positions = <13 23>;
-        };
-
-        combo16 {
-            bindings = <&kp RIGHT>;
-            key-positions = <14 24>;
-        };
-
-        combo17 {
-            bindings = <&kp HOME>;
-            key-positions = <5 6>;
-            layers = <0 1 2>;
-        };
-
-        combo18 {
-            bindings = <&kp END>;
-            key-positions = <15 16>;
-            layers = <0 1 2>;
-        };
-
-        combo19 {
-            bindings = <&kp LG(UP)>;
-            key-positions = <5 6>;
-            layers = <3 4 5>;
-        };
-
-        combo20 {
-            bindings = <&kp LG(DOWN)>;
-            key-positions = <15 16>;
-            layers = <3 4 5>;
-        };
-
-        combo21 {
-            bindings = <&mc0>;
-            key-positions = <17 27>;
-        };
-
-        combo22 {
-            bindings = <&mkp MB1>;
-            key-positions = <7 17>;
-        };
-
-        combo23 {
-            bindings = <&mkp MB2>;
-            key-positions = <8 18>;
-        };
-
-        combo24 {
-            bindings = <&kp DEL>;
-            key-positions = <9 19>;
-        };
-
-        combo25 {
-            bindings = <&kp ENTER>;
-            key-positions = <19 29>;
-        };
-
-        combo26 {
-            bindings = <&tog 1>;
-            key-positions = <40 41>;
         };
     };
 
@@ -742,71 +583,103 @@
 
         layer_0 {
             bindings = <
-&lt 2 Q      &lt 1 W   &kp E                  &kp R        &kp T                                  &kp LEFT_BRACKET  &kp Y   &kp U        &kp I  &lt 2 O
-&kp A        &kp S     &kp D                  &mt LANG2 F  &kp G                                  &us_bq            &kp H   &mt LANG1 J  &kp K  &kp P
-&mt LSHFT Z  &lt 2 X   &kp C                  &kp V        &kp B                                  &TD02             &TD03   &kp N        &kp M  &mt RSHFT L
-&kp LCTRL    &kp LGUI  &mt LALT LS(CAPSLOCK)  &kt A        &lt 2 ENTER  &lt 1 SPACE    &lt 2 TAB  &lt 1 BACKSPACE   &trans  &TD04        &TD05  &TD06
-                       &trans                 &trans       &trans                                 &trans            &trans  &trans
+&kp Q   &lt 2 W    &kp E   &kp R   &kp T                                        &kp Y    &kp U   &kp I   &lt 2 O  &kp P
+&kp A   &kp S      &kp D   &kp F   &kp G                                        &kp H    &kp J   &kp K   &kp L    &TD01
+&kp Z   &kp X      &kp C   &kp V   &kp B                                        &kp N    &kp M   &TD02   &TD03    &TD04
+&trans  &kp LANG2  &trans  &trans  &lt 2 ENTER  &lt 1 SPACE    &lt 1 BACKSPACE  &kp TAB  &trans  &trans  &trans   &kp LANG1
+                   &trans  &trans  &trans                                       &trans   &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         layer_1 {
             bindings = <
-&mc01      &TD11      &mc03                  &mc04   &TD14                                 &kp HOME   &kp END    &kp N7        &kp N8  &lt 2 N9
-&TD15      &TD16      &TD17                  &TD18   &kp LC(PG_DN)                         &kp PG_UP  &kp PG_DN  &mt LANG2 N4  &kp N5  &kp N6
-&TD20      &kp LC(X)  &kp LC(C)              &TD23   &kp LC(B)                             &TD07      &TD08      &kp N1        &kp N2  &mt RSHFT N3
-&kp LCTRL  &kp LGUI   &mt LALT LS(CAPSLOCK)  &trans  &kp LG(L)      &kp LA(F4)    &kp TAB  &kp BSPC   &trans     &kp N0        &TD09   &kp TAB
-                      &trans                 &trans  &trans                                &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans                            &kp N7  &kp N8  &kp N9  &trans   &trans
+&kp LC(A)  &kp LC(S)  &trans     &trans     &trans                            &kp N4  &kp N5  &kp N6  &trans   &trans
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)                         &kp N1  &kp N2  &kp N3  &kp TAB  &kp ENTER
+&trans     &trans     &trans     &trans     &kp RET    &kp SPACE    &kp BSPC  &kp N0  &trans  &trans  &trans   &TD09
+                      &trans     &trans     &trans                            &trans  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp LC(LA(TAB))  &kp F1    &kp F2                &kp F3   &kp F4                              &kp LS(LC(TAB))    &kp LC(TAB)  &kp LS(N6)  &kp LS(N8)  &kp LS(N9)
-&kp LG(A)        &kp F5    &kp F6                &kp F7   &kp F8                              &kp LA(LEFT)       &kp LC(T)    &kp LS(N4)  &kp LS(N5)  &kp EQUAL
-&kp LG(T)        &kp F9    &kp F10               &kp F11  &kp F12                             &kp LC(F)          &kp LC(W)    &kp LS(N1)  &kp UP      &kp LS(N3)
-&kp LCTRL        &kp LGUI  &mt LALT PRINTSCREEN  &trans   &TD28    &TD29    &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans       &kp LEFT    &kp DOWN    &kp RIGHT
-                           &trans                &trans   &trans                              &trans             &trans       &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &trans  &trans  &trans  &trans  &trans
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F12  &trans  &trans  &trans                     &trans  &trans  &trans  &trans  &trans
+&trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans                     &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&lt 5 Q      &lt 4 W    &kp E              &kp R        &kp T                                  &kp LEFT_BRACKET  &kp Y   &kp U        &kp I  &lt 5 O
-&kp A        &kp S      &kp D              &mt LANG2 F  &kp G                                  &us_bq            &kp H   &mt LANG1 J  &kp K  &kp P
-&mt LSHFT Z  &lt 5 X    &kp C              &kp V        &kp B                                  &TD02             &TD03   &kp N        &kp M  &mt RSHFT L
-&kp LGUI     &kp CARET  &mt LALT CAPSLOCK  &trans       &lt 5 ENTER  &lt 4 SPACE    &lt 5 TAB  &lt 4 BACKSPACE   &trans  &TD04        &TD05  &TD06
-                        &trans             &trans       &trans                                 &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                    &trans  &trans  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans     &trans     &trans             &trans     &trans                            &kp HOME   &kp END    &kp N7        &kp N8  &lt 2 N9
-&kp LG(A)  &kp LG(S)  &trans             &trans     &trans                            &kp PG_UP  &kp PG_DN  &mt LANG2 N4  &kp N5  &kp N6
-&kp LG(Z)  &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp LG(B)                         &TD07      &TD08      &kp N1        &kp N2  &mt RSHFT N3
-&kp LGUI   &kp LCTRL  &mt LALT CAPSLOCK  &trans     &kp LC(LG(Q))  &iOS00    &kp TAB  &kp BSPC   &trans     &kp N0        &TD09   &kp TAB
-                      &trans             &trans     &trans                            &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                    &trans  &trans  &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&iOS01    &kp F1     &kp F2          &kp F3   &kp F4                           &kp LS(LC(TAB))        &kp LC(TAB)  &kp LS(N6)  &kp LS(N8)  &kp LS(N9)
-&iOS02    &kp F5     &kp F6          &kp F7   &kp F8                           &kp LG(RIGHT_BRACKET)  &kp LG(T)    &kp LS(N4)  &kp LS(N5)  &kp EQUAL
-&iOS03    &kp F9     &kp F10         &kp F11  &kp F12                          &kp LG(F)              &kp LG(W)    &kp LS(N1)  &kp UP      &kp LS(N3)
-&kp LGUI  &kp LCTRL  &kp LS(LG(N4))  &trans   &iOS04   &iOS05    &kp LG(LEFT)  &kp LG(RIGHT)          &trans       &kp LEFT    &kp DOWN    &kp RIGHT
-                     &trans          &trans   &trans                           &trans                 &trans       &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                    &trans  &trans  &trans
             >;
         };
 
         layer_6 {
             bindings = <
-&bt00   &bt01       &bt02         &bt03         &bt04                                   &bt00           &bt01       &bt02         &bt03         &bt04
-&trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_DN  &trans                                  &trans          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans
-&trans  &trans      &kp C_BRI_DN  &kp C_BRI_UP  &trans                                  &trans          &trans      &kp C_BRI_DN  &kp C_BRI_UP  &trans
-&trans  &trans      &trans        &trans        &bt BT_CLR  &bootloader    &bootloader  &bt BT_CLR_ALL  &trans      &trans        &trans        &trans
-                    &trans        &trans        &trans                                  &trans          &trans      &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bootloader    &bootloader  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                              &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &mo 2   &mkp MB2  &mkp MB1  &mc99                     &mc99   &mkp MB1  &mkp MB2  &mo 2   &trans
+&trans  &trans  &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
+                &trans    &trans    &trans                    &trans  &trans    &trans
             >;
         };
     };
