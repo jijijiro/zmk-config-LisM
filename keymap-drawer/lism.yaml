@@ -403,7 +403,7 @@ layers:
   - '&bt02'
   - '&bt03'
   - '&bt04'
-  - {t: ▽, type: trans}
+  - OUT USB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
