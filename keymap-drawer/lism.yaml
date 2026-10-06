@@ -1,28 +1,28 @@
 layout: {zmk_keyboard: lism}
 layers:
   '0':
-  - Q
-  - {t: W, h: '2'}
-  - E
-  - R
-  - T
+  - {t: Q, h: '2'}
+  - {t: W, h: '3'}
+  - {t: E, h: '8'}
+  - {t: R, h: '9'}
+  - {t: T, h: '10'}
   - Y
   - U
   - I
-  - {t: O, h: '2'}
-  - P
+  - {t: O, h: '3'}
+  - L
   - A
   - S
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - {t: G, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - L
+  - H
+  - J
+  - K
+  - P
   - '&TD01'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: X, h: '6'}
+  - {t: X, h: '8'}
   - C
   - V
   - B
@@ -32,17 +32,17 @@ layers:
   - '&TD03'
   - '&TD04'
   - {t: ▽, type: trans}
-  - LANG2
+  - {t: LANG2, h: '3'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-return$$', h: '0'}
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:backspace$$', h: '1'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LANG1
+  - {t: LANG1, h: '3'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -50,16 +50,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '1':
-  - '&mc01'
-  - '&TD11'
+  - '&TD10'
+  - '&mc02'
   - '&mc03'
   - '&mc04'
   - '&TD14'
   - '7'
   - '8'
   - '9'
-  - {t: KP ASTERISK, h: '2'}
-  - KP SLASH
+  - {t: STAR, h: '3'}
+  - FSLH
   - '&TD15'
   - '&TD16'
   - '&TD17'
@@ -68,10 +68,10 @@ layers:
   - '4'
   - '5'
   - '6'
-  - KP PLUS
-  - KP MINUS
+  - +
+  - '-'
   - '&TD20'
-  - Ctl+X
+  - {t: Ctl+X, h: '8'}
   - Ctl+C
   - '&TD23'
   - Ctl+B
@@ -79,15 +79,15 @@ layers:
   - '2'
   - '3'
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ▽, type: trans}
+  - {t: LANG2, h: '3'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', type: held}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '0'
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
+  - {t: '$$mdi:keyboard-space$$', h: '9', type: held}
+  - {t: '$$mdi:backspace$$', h: '9'}
+  - {t: '0', h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,31 +99,30 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '2':
-  - {t: ▽, type: trans}
   - {t: F1, type: held}
   - F2
   - F3
   - F4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F5
+  - HOME
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F9
   - F10
+  - PG UP
+  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F11
   - F12
+  - PRINTSCREEN
+  - Gui+P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -133,10 +132,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&TD28'
-  - '&TD29'
-  - Gui+Sft+$$mdi:arrow-left-bold$$
-  - Gui+Sft+$$mdi:arrow-right-bold$$
+  - {t: ▽, type: trans}
+  - Gui+L
+  - Alt+F4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -148,129 +148,31 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
-  - Q
-  - {t: W, h: '0'}
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - {t: O, h: '0'}
-  - P
-  - A
-  - S
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: G, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - L
-  - '&TD01'
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - '&TD02'
-  - '&TD03'
-  - '&TD04'
-  - {t: ▽, type: trans}
-  - LANG2
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-return$$', h: '0'}
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
-  - {t: '$$mdi:backspace$$', h: '1'}
-  - $$mdi:keyboard-tab$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LANG1
+  - Ctl+Alt+$$mdi:keyboard-tab$$
+  - {t: '$$mdi:arrow-up-bold$$', type: held}
+  - Gui+A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - $$mdi:arrow-up-bold$$
   - {t: ▽, type: trans}
-  '4':
-  - '&mc01'
-  - '&TD11'
-  - '&mc03'
-  - '&mc04'
-  - '&TD14'
-  - '7'
-  - '8'
-  - '9'
-  - {t: KP ASTERISK, h: '2'}
-  - KP SLASH
-  - '&TD15'
-  - '&TD16'
-  - '&TD17'
-  - '&TD18'
-  - {t: Ctl+PG DN, h: '$$mdi:apple-keyboard-control$$'}
-  - '4'
-  - '5'
-  - '6'
-  - KP PLUS
-  - KP MINUS
-  - '&TD20'
-  - Ctl+X
-  - Ctl+C
-  - '&TD23'
-  - Ctl+B
-  - '1'
-  - '2'
-  - '3'
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TD09'
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - Gui+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '5':
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F5
-  - F6
-  - F7
-  - F8
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F9
-  - F10
-  - F11
-  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -294,10 +196,206 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  '4':
+  - {t: Q, h: '6'}
+  - {t: W, h: '7'}
+  - {t: E, h: '8'}
+  - {t: R, h: '9'}
+  - {t: T, h: '10'}
+  - Y
+  - U
+  - I
+  - {t: O, h: '7'}
+  - L
+  - A
+  - {t: S, h: GLOBE}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: G, h: '$$mdi:apple-keyboard-command$$'}
+  - H
+  - J
+  - K
+  - P
+  - '&TD01'
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: X, h: '8'}
+  - C
+  - V
+  - B
+  - N
+  - M
+  - '&TD02'
+  - '&TD03'
+  - '&TD04'
+  - {t: ▽, type: trans}
+  - {t: LANG2, h: '7'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:keyboard-return$$', h: '6'}
+  - {t: '$$mdi:keyboard-space$$', h: '5'}
+  - {t: '$$mdi:backspace$$', h: '5'}
+  - {t: '$$mdi:keyboard-tab$$', h: '6'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: LANG1, h: '7'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '5':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: STAR, h: '7'}
+  - FSLH
+  - Gui+A
+  - Gui+S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - '-'
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Gui+B
+  - '1'
+  - '2'
+  - '3'
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ▽, type: trans}
+  - LANG2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', type: held}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LANG1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   '6':
+  - {t: F1, type: held}
+  - F2
+  - F3
+  - F4
+  - F5
+  - HOME
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - PG UP
+  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - Gui+Sft+4
+  - Gui+Sft+3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Ctl+Q
+  - '&ios00'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '7':
+  - '&ios03'
+  - {t: '$$mdi:arrow-up-bold$$', type: held}
+  - '&ios02'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - '&ios01'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ios04'
+  - '&ios05'
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '8':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+6
@@ -316,15 +414,15 @@ layers:
   - ']'
   - NON US HASH
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+1
   - '['
   - Sft+3
-  - Sft+INT3
-  - Sft+INT3
+  - Sft+[
+  - Sft+=
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -343,17 +441,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '7':
+  '9':
   - Q
   - W
   - E
-  - R
+  - {t: R, type: held}
   - T
   - Y
   - U
   - I
   - O
-  - P
+  - L
   - A
   - S
   - D
@@ -362,7 +460,7 @@ layers:
   - H
   - J
   - K
-  - L
+  - P
   - '&TD01'
   - Z
   - X
@@ -392,12 +490,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '8':
+  '10':
   - '&bt00'
   - '&bt01'
   - '&bt02'
   - '&bt03'
-  - '&bt04'
+  - {t: '&bt04', type: held}
   - '&bt00'
   - '&bt01'
   - '&bt02'
@@ -408,33 +506,33 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - OUT USB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:lock-open-variant-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:progress-download$$
+  - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: '$$mdi:progress-download$$', type: held}
-  - $$mdi:progress-download$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - $$mdi:lock-open-variant-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -448,29 +546,33 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [20, 21]
   k: Sft+$$mdi:apple-keyboard-caps$$
-  l: ['0', '1', '2']
+  l: ['0']
 - p: [20, 21]
   k: $$mdi:apple-keyboard-caps$$
-  l: ['3', '4', '5']
+  l: ['4']
 - p: [34, 35]
-  k: '8'
+  k: '10'
 - p: [36, 37]
-  k: '8'
+  k: '10'
 - p: [6, 7]
   k: '&mc00'
 - p: [0, 10]
   k: $$mdi:backspace-reverse-outline$$
-- p: [10, 20]
+- p: [1, 11]
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [2, 12]
   k: $$mdi:mouse-right-click-outline$$
 - p: [3, 13]
   k: $$mdi:mouse-left-click-outline$$
 - p: [4, 14]
-  k: '&mc99'
+  k: '&mouse'
 - p: [5, 15]
-  k: '&mc99'
+  k: '&mouse'
 - p: [6, 16]
   k: $$mdi:mouse-left-click-outline$$
 - p: [7, 17]
   k: $$mdi:mouse-right-click-outline$$
+- p: [3, 4]
+  k: HOME
+- p: [13, 14]
+  k: END
