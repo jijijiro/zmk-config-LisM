@@ -2,14 +2,14 @@ layout: {zmk_keyboard: lism}
 layers:
   '0':
   - Q
-  - {t: W, h: '0'}
+  - {t: W, h: '2'}
   - E
   - R
   - T
   - Y
   - U
   - I
-  - {t: O, h: '0'}
+  - {t: O, h: '2'}
   - P
   - A
   - S
@@ -100,14 +100,14 @@ layers:
   - {t: ▽, type: trans}
   '2':
   - {t: ▽, type: trans}
-  - F1
+  - {t: F1, type: held}
   - F2
   - F3
   - F4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F5
@@ -134,7 +134,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&TD28'
-  - {t: '&TD29', type: held}
+  - '&TD29'
   - Gui+Sft+$$mdi:arrow-left-bold$$
   - Gui+Sft+$$mdi:arrow-right-bold$$
   - {t: ▽, type: trans}
