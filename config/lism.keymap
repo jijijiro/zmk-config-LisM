@@ -734,11 +734,11 @@
 
         layer_8 {
             bindings = <
-&bt00   &bt01   &bt02   &bt03   &bt04                     &bt00   &bt01   &bt02   &bt03   &bt04
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans                    &trans  &trans  &trans
+&bt00         &bt01   &bt02   &bt03   &bt04                     &bt00   &bt01   &bt02   &bt03   &bt04
+&out OUT_USB  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans                    &trans  &trans  &trans
             >;
         };
     };
