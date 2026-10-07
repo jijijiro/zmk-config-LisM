@@ -31,17 +31,17 @@ layers:
   - '&TD02'
   - '&TD03'
   - '&TD04'
-  - {t: ▽, type: trans}
   - {t: LANG2, h: '3'}
-  - {t: ▽, type: trans}
+  - A
+  - B
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:backspace$$', h: '1'}
   - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - C
+  - D
   - {t: LANG1, h: '3'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
