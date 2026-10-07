@@ -665,6 +665,11 @@
             bindings = <&kp END>;
             key-positions = <13 14>;
         };
+
+        combo16 {
+            bindings = <&tog 1>;
+            key-positions = <37 41>;
+        };
     };
 
     keymap {
@@ -675,7 +680,7 @@
 &lt 2 Q      &lt 3 W  &lt 8 E     &lt 9 R     &lt 10 T                                     &kp Y      &kp U   &kp I   &lt 3 O  &kp L
 &kp A        &kp S    &mt LALT D  &mt LGUI F  &mt LCTRL G                                  &kp H      &kp J   &kp K   &kp P    &TD01
 &mt LSHFT Z  &lt 8 X  &kp C       &kp V       &kp B                                        &kp N      &kp M   &TD02   &TD03    &TD04
-&lt 3 LANG2  &kp A    &kp B       &trans      &lt 2 ENTER  &lt 1 SPACE    &lt 1 BACKSPACE  &lt 2 TAB  &trans  &kp C   &kp D    &lt 3 LANG1
+&lt 3 LANG2  &trans   &trans      &trans      &lt 2 ENTER  &lt 1 SPACE    &lt 1 BACKSPACE  &lt 2 TAB  &trans  &trans  &trans   &lt 3 LANG1
                       &trans      &trans      &trans                                       &trans     &trans  &trans
             >;
 
@@ -684,11 +689,11 @@
 
         layer_1 {
             bindings = <
-&TD10   &mc02        &mc03      &mc04   &TD14                                                &kp N7    &kp N8  &kp N9  &lt 3 STAR  &kp FSLH
-&TD15   &TD16        &TD17      &TD18   &mt LCTRL LC(PG_DN)                                  &kp N4    &kp N5  &kp N6  &kp PLUS    &kp MINUS
-&TD20   &lt 8 LC(X)  &kp LC(C)  &TD23   &kp LC(B)                                            &kp N1    &kp N2  &kp N3  &kp TAB     &mt RSHFT ENTER
-&trans  &lt 3 LANG2  &trans     &trans  &lt 2 ENTER          &lt 9 SPACE    &lt 9 BACKSPACE  &lt 2 N0  &trans  &trans  &trans      &TD09
-                     &trans     &trans  &trans                                               &trans    &trans  &trans
+&TD10        &mc02        &mc03      &mc04   &TD14                                                &kp N7    &kp N8  &kp N9  &lt 3 STAR  &kp FSLH
+&TD15        &TD16        &TD17      &TD18   &mt LCTRL LC(PG_DN)                                  &kp N4    &kp N5  &kp N6  &kp PLUS    &kp MINUS
+&TD20        &lt 8 LC(X)  &kp LC(C)  &TD23   &kp LC(B)                                            &kp N1    &kp N2  &kp N3  &kp TAB     &mt RSHFT ENTER
+&lt 3 LANG2  &trans       &trans     &trans  &lt 2 ENTER          &lt 9 SPACE    &lt 9 BACKSPACE  &lt 2 N0  &trans  &trans  &trans      &TD09
+                          &trans     &trans  &trans                                               &trans    &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -723,7 +728,7 @@
 &lt 6 Q      &lt 7 W      &lt 8 E     &lt 9 R      &lt 10 T                                     &kp Y      &kp U   &kp I   &lt 7 O  &kp L
 &kp A        &mt GLOBE S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                   &kp H      &kp J   &kp K   &kp P    &TD01
 &mt LSHFT Z  &lt 8 X      &kp C       &kp V        &kp B                                        &kp N      &kp M   &TD02   &TD03    &TD04
-&trans       &lt 7 LANG2  &trans      &trans       &lt 6 ENTER  &lt 5 SPACE    &lt 5 BACKSPACE  &lt 6 TAB  &trans  &trans  &trans   &lt 7 LANG1
+&lt 7 LANG2  &trans       &trans      &trans       &lt 6 ENTER  &lt 5 SPACE    &lt 5 BACKSPACE  &lt 6 TAB  &trans  &trans  &trans   &lt 7 LANG1
                           &trans      &trans       &trans                                       &trans     &trans  &trans
             >;
 
@@ -735,7 +740,7 @@
 &trans     &trans     &trans     &trans     &trans                            &kp N7  &kp N8  &kp N9  &lt 7 STAR  &kp FSLH
 &kp LG(A)  &kp LG(S)  &trans     &trans     &trans                            &kp N4  &kp N5  &kp N6  &kp PLUS    &kp MINUS
 &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)                         &kp N1  &kp N2  &kp N3  &kp TAB     &mt RSHFT ENTER
-&trans     &kp LANG2  &trans     &trans     &kp ENTER  &kp SPACE    &kp BSPC  &kp N0  &trans  &trans  &trans      &kp LANG1
+&kp LANG2  &trans     &trans     &trans     &kp ENTER  &kp SPACE    &kp BSPC  &kp N0  &trans  &trans  &trans      &kp LANG1
                       &trans     &trans     &trans                            &trans  &trans  &trans
             >;
 
@@ -780,10 +785,10 @@
 
         layer_9 {
             bindings = <
-&kp Q   &kp W      &kp E   &kp R   &kp T                           &kp Y    &kp U   &kp I   &kp O   &kp L
-&kp A   &kp S      &kp D   &kp F   &kp G                           &kp H    &kp J   &kp K   &kp P   &TD01
-&kp Z   &kp X      &kp C   &kp V   &kp B                           &kp N    &kp M   &TD02   &TD03   &TD04
-&trans  &kp LANG2  &trans  &trans  &kp RET  &kp SPACE    &kp BSPC  &kp TAB  &trans  &trans  &trans  &kp LANG1
+&kp Q      &kp W   &kp E   &kp R   &kp T                           &kp Y    &kp U   &kp I   &kp O   &kp L
+&kp A      &kp S   &kp D   &kp F   &kp G                           &kp H    &kp J   &kp K   &kp P   &TD01
+&kp Z      &kp X   &kp C   &kp V   &kp B                           &kp N    &kp M   &TD02   &TD03   &TD04
+&kp LANG2  &trans  &trans  &trans  &kp RET  &kp SPACE    &kp BSPC  &kp TAB  &trans  &trans  &trans  &kp LANG1
                    &trans  &trans  &trans                          &trans   &trans  &trans
             >;
 
@@ -792,11 +797,11 @@
 
         layer_10 {
             bindings = <
-&bt00         &bt01           &bt02   &bt03   &bt04                                       &bt00           &bt01   &bt02   &bt03   &bt04
-&out OUT_USB  &trans          &trans  &trans  &trans                                      &trans          &trans  &trans  &trans  &out OUT_USB
-&trans        &trans          &trans  &trans  &bt BT_CLR_ALL                              &bt BT_CLR_ALL  &trans  &trans  &trans  &trans
-&trans        &studio_unlock  &trans  &trans  &sys_reset      &bootloader    &bootloader  &sys_reset      &trans  &trans  &trans  &studio_unlock
-                              &trans  &trans  &trans                                      &trans          &trans  &trans
+&bt00           &bt01   &bt02   &bt03   &bt04                                       &bt00           &bt01   &bt02   &bt03   &bt04
+&out OUT_USB    &trans  &trans  &trans  &trans                                      &trans          &trans  &trans  &trans  &out OUT_USB
+&trans          &trans  &trans  &trans  &bt BT_CLR_ALL                              &bt BT_CLR_ALL  &trans  &trans  &trans  &trans
+&studio_unlock  &trans  &trans  &trans  &sys_reset      &bootloader    &bootloader  &sys_reset      &trans  &trans  &trans  &studio_unlock
+                        &trans  &trans  &trans                                      &trans          &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
