@@ -32,16 +32,16 @@ layers:
   - '&TD03'
   - '&TD04'
   - {t: LANG2, h: '3'}
-  - A
-  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:backspace$$', h: '1'}
   - {t: '$$mdi:keyboard-tab$$', h: '2'}
   - {t: ▽, type: trans}
-  - C
-  - D
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: LANG1, h: '3'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,8 +80,8 @@ layers:
   - '3'
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ▽, type: trans}
   - {t: LANG2, h: '3'}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', h: '2'}
@@ -227,8 +227,8 @@ layers:
   - '&TD02'
   - '&TD03'
   - '&TD04'
-  - {t: ▽, type: trans}
   - {t: LANG2, h: '7'}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', h: '6'}
@@ -276,8 +276,8 @@ layers:
   - '3'
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ▽, type: trans}
   - LANG2
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -472,8 +472,8 @@ layers:
   - '&TD02'
   - '&TD03'
   - '&TD04'
-  - {t: ▽, type: trans}
   - LANG2
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -521,8 +521,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - $$mdi:lock-open-variant-outline$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -576,3 +576,5 @@ combos:
   k: HOME
 - p: [13, 14]
   k: END
+- p: [37, 41]
+  k: {t: '1', h: toggle}
