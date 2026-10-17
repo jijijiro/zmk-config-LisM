@@ -80,11 +80,11 @@ layers:
   - {t: '3', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '3'}
+  - {t: '$$mdi:keyboard-tab$$', h: '3'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: '2'}
+  - {t: '$$mdi:keyboard-return$$', h: '2'}
   - {t: '$$mdi:keyboard-space$$', h: '8', type: held}
   - {t: '$$mdi:backspace$$', h: '8'}
   - {t: '0', h: '2'}
@@ -276,11 +276,11 @@ layers:
   - {t: '3', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '7'}
+  - {t: '$$mdi:keyboard-tab$$', h: '7'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '$$mdi:keyboard-tab$$', h: '6'}
+  - {t: '$$mdi:keyboard-return$$', h: '6'}
   - {t: '$$mdi:keyboard-space$$', h: '8', type: held}
   - {t: '$$mdi:backspace$$', h: '8'}
   - {t: '0', h: '6'}
