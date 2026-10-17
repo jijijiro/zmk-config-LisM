@@ -66,8 +66,8 @@ layers:
   - '&TD18'
   - Ctl+PG DN
   - '4'
-  - {t: '5', h: LANG1}
-  - {t: '6', h: LANG2}
+  - {t: '5', h: LANG2}
+  - {t: '6', h: LANG1}
   - KP PLUS
   - KP MINUS
   - '&TD20'
@@ -213,8 +213,8 @@ layers:
   - {t: F, h: LANG2}
   - G
   - H
-  - {t: J, h: LANG1}
-  - {t: K, h: LANG2}
+  - {t: J, h: LANG2}
+  - {t: K, h: LANG1}
   - L
   - '&TD04'
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
@@ -262,8 +262,8 @@ layers:
   - LANG2
   - {t: ▽, type: trans}
   - '4'
-  - {t: '5', h: LANG1}
-  - {t: '6', h: LANG2}
+  - {t: '5', h: LANG2}
+  - {t: '6', h: LANG1}
   - KP PLUS
   - KP MINUS
   - {t: Gui+Z, h: '$$mdi:apple-keyboard-shift$$'}
