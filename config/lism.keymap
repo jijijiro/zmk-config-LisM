@@ -738,11 +738,11 @@
 
         layer_1 {
             bindings = <
-&TD10        &TH02 3 0        &TH03 8 0       &TH04 9 0  &TD14                                            &kp N7        &lt 9 N8      &kp N9        &kp KP_ASTERISK  &lt 2 KP_SLASH
-&TD15        &TD16            &TD17           &TD18      &kp LC(PG_DN)                                    &kp N4        &mt LANG1 N5  &mt LANG2 N6  &kp KP_PLUS      &kp KP_MINUS
-&TD20        &mt RSHFT LC(X)  &mt LALT LC(C)  &TD23      &mt LCTRL LC(B)                                  &mt RCTRL N1  &mt RGUI N2   &mt RALT N3   &mt LSHFT TAB    &mt RSHFT ENTER
-&lt 3 ENTER  &trans           &trans          &trans     &lt 2 TAB        &lt 8 SPACE    &lt 8 BACKSPACE  &lt 2 N0      &trans        &trans        &trans           &TD08
-                              &trans          &trans     &trans                                           &trans        &trans        &trans
+&TD10      &TH02 3 0        &TH03 8 0       &TH04 9 0  &TD14                                            &kp N7        &lt 9 N8      &kp N9        &kp KP_ASTERISK  &lt 2 KP_SLASH
+&TD15      &TD16            &TD17           &TD18      &kp LC(PG_DN)                                    &kp N4        &mt LANG1 N5  &mt LANG2 N6  &kp KP_PLUS      &kp KP_MINUS
+&TD20      &mt RSHFT LC(X)  &mt LALT LC(C)  &TD23      &mt LCTRL LC(B)                                  &mt RCTRL N1  &mt RGUI N2   &mt RALT N3   &mt LSHFT TAB    &mt RSHFT ENTER
+&lt 3 TAB  &trans           &trans          &trans     &lt 2 ENTER      &lt 8 SPACE    &lt 8 BACKSPACE  &lt 2 N0      &trans        &trans        &trans           &TD08
+                            &trans          &trans     &trans                                           &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
@@ -789,7 +789,7 @@
 &trans           &trans           &trans          &trans           &trans                                          &kp N7       &lt 9 N8      &kp N9        &kp KP_ASTERISK  &lt 6 KP_SLASH
 &kp LG(A)        &kp LG(S)        &kp LANG1       &kp LANG2        &trans                                          &kp N4       &mt LANG1 N5  &mt LANG2 N6  &kp KP_PLUS      &kp KP_MINUS
 &mt LSHFT LG(Z)  &mt RSHFT LG(X)  &mt LALT LG(C)  &mt LCTRL LG(V)  &mt LGUI LG(B)                                  &mt RGUI N1  &mt RCTRL N2  &mt RALT N3   &mt LSHFT TAB    &mt RSHFT ENTER
-&lt 7 ENTER      &trans           &trans          &trans           &lt 6 TAB       &lt 8 SPACE    &lt 8 BACKSPACE  &lt 6 N0     &trans        &trans        &trans           &TD09
+&lt 7 TAB        &trans           &trans          &trans           &lt 6 ENTER     &lt 8 SPACE    &lt 8 BACKSPACE  &lt 6 N0     &trans        &trans        &trans           &TD09
                                   &trans          &trans           &trans                                          &trans       &trans        &trans
             >;
 
