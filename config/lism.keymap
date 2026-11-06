@@ -658,7 +658,7 @@
 
         combo08 {
             bindings = <&mc00>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
         };
 
         combo09 {
@@ -719,6 +719,11 @@
         combo19 {
             bindings = <&mkp MB4>;
             key-positions = <5 15>;
+        };
+
+        combo20 {
+            bindings = <&kp P>;
+            key-positions = <17 18>;
         };
     };
 
