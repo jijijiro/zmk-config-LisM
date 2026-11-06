@@ -1,39 +1,31 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 200
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/mouse.h>
 
 &mt {
     tapping-term-ms = <300>;
-    flavor = "balanced";
+    require-prior-idle-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 &lt {
-    quick-tap-ms = <300>;
+    tapping-term-ms = <300>;
+    require-prior-idle-ms = <200>;
+    flavor = "tap-preferred";
 };
 
-
 / {
-    macros {
-        emoji: emoji_macro {
-            compatible = "zmk,behavior-macro";
-            label = "EMOJI";
-            #binding-cells = <0>;
-            bindings = 
-                <&macro_press &kp CAPSLOCK>,
-                <&macro_tap &kp E>,
-                <&macro_release &kp CAPSLOCK>;
-        };
-    };
-
     behaviors {
         encoder_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+
             tap-ms = <20>;
         };
 
@@ -42,103 +34,813 @@
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
+
+        us_minus: us_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "US_MINUS";
+            bindings = <&kp MINUS>, <&kp LS(INT1)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        us_equal: us_equal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "US_EQUAL";
+            bindings = <&kp LS(MINUS)>, <&kp LS(SEMI)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        us_semicolon: us_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "US_SEMICOLON";
+            bindings = <&kp SEMI>, <&kp LS(N2)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        us_colon: us_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "US_COLON";
+            bindings = <&kp APOS>, <&kp LS(N7)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        TD00: TD00 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD00";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD01: TD01 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD01";
+            #binding-cells = <0>;
+            bindings = <&HT00 LANG2 0>, <&us_equal>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD02: TD02 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD02";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&us_semicolon>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD03: TD03 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD03";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&us_colon>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD04: TD04 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD04";
+            #binding-cells = <0>;
+            bindings = <&mt RSHFT SLASH>, <&kp INT3>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD05: TD05 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD05";
+            #binding-cells = <0>;
+            bindings = <&HT01 2 0>, <&kp LC(LS(F1))>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD06: TD06 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD06";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD07: TD07 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD07";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD08: TD08 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD08";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD09: TD09 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD09";
+            #binding-cells = <0>;
+            bindings = <&mc05>, <&mc06>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD10: TD10 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD10";
+            #binding-cells = <0>;
+            bindings = <&mt (LANG1) LC(A)>, <&mc09>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD11: TD11 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD11";
+            #binding-cells = <0>;
+            bindings = <&mt (LANG2) LC(S)>, <&mc10>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD12: TD12 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD12";
+            #binding-cells = <0>;
+            bindings = <&mt (LALT) LC(D)>, <&mc11>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD13: TD13 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD13";
+            #binding-cells = <0>;
+            bindings = <&mt (LGUI) LC(PG_UP)>, <&mc07>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD14: TD14 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD14";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD15: TD15 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD15";
+            #binding-cells = <0>;
+            bindings = <&mt (LSHFT) LC(Z)>, <&kp LC(N1)>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD16: TD16 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD16";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD17: TD17 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD17";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD18: TD18 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD18";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>, <&mc08>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD19: TD19 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD19";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD20: TD20 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD20";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp LC(LA(TAB))>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD21: TD21 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD21";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&kp LG(T)>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD22: TD22 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD22";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&kp LG(A)>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD23: TD23 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD23";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD24: TD24 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD24";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD25: TD25 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD25";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(LEFT))>, <&kp LC(LG(LA(LEFT)))>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD26: TD26 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD26";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(RIGHT))>, <&kp LC(LG(LA(RIGHT)))>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD27: TD27 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD27";
+            #binding-cells = <0>;
+            bindings = <&none>, <&iOS03>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD28: TD28 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD28";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&iOS02>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD29: TD29 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD29";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&iOS01>;
+
+            tapping-term-ms = <300>;
+        };
+
+        TD30: TD30 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD30";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        TD31: TD31 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD31";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            tapping-term-ms = <300>;
+        };
+
+        HT00: HT00 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT00";
+            bindings = <&kp>, <&us_minus>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+
+        HT01: HT01 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT01";
+            bindings = <&mo>, <&mc01>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+
+        HT02: HT02 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT02";
+            bindings = <&mo>, <&mc02>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+
+        HT03: HT03 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT03";
+            bindings = <&mo>, <&mc03>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    macros {
+        BT00: BT00 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0 &to 0>;
+            label = "BT00";
+        };
+
+        BT01: BT01 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1 &to 0>;
+            label = "BT01";
+        };
+
+        BT02: BT02 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2 &to 0>;
+            label = "BT02";
+        };
+
+        BT03: BT03 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 3 &to 0>;
+            label = "BT03";
+        };
+
+        BT04: BT04 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 4 &to 0>;
+            label = "BT04";
+        };
+
+        DoubleClick: DoubleClick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&macro_wait_time 50>, <&mkp MB1>;
+
+            label = "DOUBLECLICK";
+        };
+
+        mc00: mc00 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT>;
+            label = "MC00";
+        };
+
+        mc01: mc01 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LANG2 &kp N1 &kp LC(RET)>;
+
+            label = "MC01";
+        };
+
+        mc02: mc02 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LANG2 &kp N2 &kp LC(RET)>;
+
+            label = "MC02";
+        };
+
+        mc03: mc03 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LANG2 &kp N3 &kp LC(RET)>;
+
+            label = "MC03";
+        };
+
+        mc04: mc04 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LANG2 &kp COMMA &kp LC(RET)>;
+
+            label = "MC04";
+        };
+
+        mc05: mc05 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LANG2 &kp DOT &kp LC(RET)>;
+
+            label = "MC05";
+        };
+
+        mc06: mc06 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LC(LA(V)) &kp T &kp RET>;
+
+            label = "MC06";
+        };
+
+        mc07: mc07 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LC(LA(V)) &kp F &kp RET>;
+
+            label = "MC07";
+        };
+
+        mc08: mc08 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LC(LA(V)) &kp V &kp RET>;
+
+            label = "MC08";
+        };
+
+        mc09: mc09 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp A &kp L>;
+            label = "MC09";
+        };
+
+        mc10: mc10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp A &kp C>;
+            label = "MC10";
+        };
+
+        mc11: mc11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp A &kp R>;
+            label = "MC11";
+        };
+
+        iOS00: iOS00 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp H>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS00";
+        };
+
+        iOS01: iOS01 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp C>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS01";
+        };
+
+        iOS02: iOS02 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp A>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS02";
+        };
+
+        iOS03: iOS03 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp UP>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS03";
+        };
+
+        iOS04: iOS04 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp LEFT>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS04";
+        };
+
+        iOS05: iOS05 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp GLOBE &kp RIGHT>,
+                <&macro_release>,
+                <&kp GLOBE>;
+
+            label = "IOS05";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo00 {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        combo01 {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        combo02 {
+            bindings = <&kp CAPS>;
+            key-positions = <20 21>;
+        };
+
+        combo03 {
+            bindings = <&kp HOME>;
+            key-positions = <3 4>;
+        };
+
+        combo04 {
+            bindings = <&kp END>;
+            key-positions = <13 14>;
+        };
+
+        combo05 {
+            bindings = <&mo 8>;
+            key-positions = <34 35>;
+        };
+
+        combo06 {
+            bindings = <&kp MINUS>;
+            key-positions = <15 16>;
+        };
+
+        combo07 {
+            bindings = <&mo 8>;
+            key-positions = <16 17>;
+        };
+
+        combo08 {
+            bindings = <&mc00>;
+            key-positions = <17 18>;
+        };
+
+        combo09 {
+            bindings = <&kp APOS>;
+            key-positions = <25 26>;
+            layers = <1 5>;
+        };
+
+        combo10 {
+            bindings = <&kp DOT>;
+            key-positions = <26 27>;
+            layers = <1 5>;
+        };
+
+        combo11 {
+            bindings = <&kp COMMA>;
+            key-positions = <27 28>;
+            layers = <1 5>;
+        };
+
+        combo12 {
+            bindings = <&tog 1>;
+            key-positions = <28 29>;
+            layers = <0 1>;
+        };
+
+        combo13 {
+            bindings = <&tog 5>;
+            key-positions = <28 29>;
+            layers = <4 5>;
+        };
+
+        combo14 {
+            bindings = <&kp SPACE>;
+            key-positions = <36 37>;
+        };
+
+        combo15 {
+            bindings = <&kp DEL>;
+            key-positions = <0 10>;
+        };
+
+        combo16 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 20>;
+        };
+
+        combo17 {
+            bindings = <&mkp MB1>;
+            key-positions = <1 11>;
+        };
+
+        combo18 {
+            bindings = <&mkp MB2>;
+            key-positions = <2 12>;
+        };
+
+        combo19 {
+            bindings = <&mkp MB4>;
+            key-positions = <5 15>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "Default Layer";
+        layer_0 {
             bindings = <
-                &kp Q            &kp W              &kp E                 &kp R                   &kp T                                                  &kp Y          &kp U            &kp I              &kp O               &kp P
-                &kp A            &mt LALT S         &mt LSHIFT D          &mt LGUI F              &mt LCTRL G                                            &mt RCTRL H    &mt RGUI J       &mt RSHIFT K       &mt RALT L          &lt 3 SEMICOLON
-                &kp Z            &kp X              &kp C                 &kp V                   &kp B                                                  &kp N          &kp M            &kp COMMA          &kp DOT             &kp SLASH
-                &lt 4 DELETE     &tog 1             &lt 1 TAB             &msc SCRL_UP            &lt 2 SPACE       &lt 3 ESC           &lt 3 BACKSPACE  &lt 2 ENTER    &msc SCRL_UP     &kp F7             &kp F10             &lt 4 F12 
-                                                    &msc SCRL_LEFT        &msc SCRL_DOWN          &msc SCRL_RIGHT                                        &msc SCRL_LEFT &msc SCRL_DOWN   &msc SCRL_RIGHT
+&lt 2 Q      &lt 3 W      &lt 8 E     &kp R       &kp T                                        &kp Y        &kp U       &kp I       &kp O        &kp P
+&mt LANG1 A  &mt LANG2 S  &mt LALT D  &mt LGUI F  &kp G                                        &kp H        &mt RGUI J  &mt RALT K  &mt LANG1 L  &TD01
+&mt LSHFT Z  &lt 2 X      &kp C       &kp V       &mt LCTRL B                                  &mt RCTRL N  &kp M       &TD02       &TD03        &TD04
+&trans       &trans       &trans      &kp UP      &lt 2 RET    &lt 1 SPACE    &lt 1 BACKSPACE  &kp TAB      &trans      &trans      &trans       &trans
+                          &kp LEFT    &kp DOWN    &kp RIGHT                                    &trans       &trans      &trans
             >;
-            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
+
+            sensor-bindings = <&encoder_kp LEFT RIGHT>;
         };
 
         layer_1 {
-            display-name = "Mouse Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &kp SPACE      &kp RG(LEFT)     &kp RG(RIGHT)      &mkp MB3            &trans
-                &mkp MB5         &trans             &trans                &trans                  &trans                                                 &kp LG(UP)     &mkp MB1         &mkp MB2           &msc SCRL_UP        &msc SCRL_DOWN
-                &mkp MB4         &trans             &trans                &trans                  &trans                                                 &kp LG(DOWN)   &kp LEFT         &kp UP             &kp RIGHT           &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans         &trans           &kp DOWN           &trans              &kp LG(W)
-                                                    &trans                &trans                  &trans                                                 &trans         &trans           &trans
+&TD05   &HT02 3 0      &HT03 8 0  &mc04     &TD09                                       &kp N7        &kp N8       &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
+&TD10   &TD11          &TD12      &TD13     &kp LC(PG_DN)                               &kp N4        &mt RGUI N5  &mt RALT N6  &mt LANG1 KP_PLUS  &mt LANG2 KP_MINUS
+&TD15   &lt (2) LC(X)  &kp LC(C)  &TD18     &mt (LCTRL) LC(B)                           &mt RCTRL N1  &kp N2       &kp N3       &kp TAB            &mt RSHFT RET
+&trans  &trans         &trans     &kp UP    &lt 2 RET          &lt 3 SPACE    &kp BSPC  &kp N0        &trans       &trans       &trans             &trans
+                       &kp LEFT   &kp DOWN  &kp RIGHT                                   &trans        &trans       &trans
             >;
+
+            sensor-bindings = <&encoder_kp LEFT RIGHT>;
         };
 
         layer_2 {
-            display-name = "Number Layer";
             bindings = <
-                &trans           &kp NUMBER_7       &kp NUMBER_8          &kp NUMBER_9            &kp EQUAL                                              &kp F1         &kp F2           &kp F7             &kp F10             &kp RSHIFT
-                &kp ASTERISK     &mt LALT NUMBER_4  &mt LSHIFT NUMBER_5   &mt LGUI NUMBER_6       &mt LCTRL MINUS                                        &mkp MB1       &kp LEFT         &kp UP             &kp RIGHT           &kp RGUI
-                &kp SLASH        &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3            &kp PLUS                                               &mkp MB2       &none            &kp DOWN           &none               &kp RALT
-                &trans           &kp DOT            &kp NUMBER_0          &kp UP                  &kp LANG2         &trans              &trans           &kp LANG1      &kp UP           &kp RS(RC(TAB))    &kp RC(TAB)         &kp F12 
-                                                    &kp LEFT              &kp DOWN                &kp RIGHT                                              &kp LEFT       &kp DOWN         &kp RIGHT
+&TD20          &TD21    &TD22            &kp F4          &kp F5                                      &kp LS(N6)          &kp LS(N8)         &kp LS(N9)         &kp LS(RBKT)  &kp LS(NON_US_HASH)
+&kp F6         &kp F7   &mt LALT F8      &mt LGUI F9     &kp F10                                     &kp LS(N4)          &mt (RGUI) LS(N5)  &mt (RALT) LS(N6)  &kp RBKT      &kp NON_US_HASH
+&mt LSHFT F11  &kp F12  &kp PRINTSCREEN  &trans          &kp LCTRL                                   &mt (RCTRL) LS(N1)  &kp LBKT           &kp LS(N3)         &kp LS(LBKT)  &mt (RSHFT) LS(EQUAL)
+&trans         &trans   &trans           &mmv MOVE_UP    &TD25            &TD26    &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))   &trans             &trans             &trans        &trans
+                        &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT                             &trans              &trans             &trans
             >;
-            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
+
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         layer_3 {
-            display-name = "Mark Layer";
             bindings = <
-                &kp LS(LG(N4))   &kp F4             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &none                                                  &kp TILDE      &kp EXCLAMATION  &kp AT_SIGN        &kp HASH            &kp DOLLAR
-                &emoji           &kp F5             &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &none                                                  &kp GRAVE      &kp UNDER        &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES   &kp BACKSLASH
-                &kp KP_NUMLOCK   &kp F11            &kp LEFT_BRACE        &kp RIGHT_BRACE         &none                                                  &kp PIPE       &kp PERCENT      &kp CARET          &kp AMPERSAND       &kp ASTERISK
-                &trans           &trans             &kp NUMBER_0          &trans                  &kp SPACE         &trans              &trans           &kp ENTER      &trans           &none              &none               &kp F12 
-                                                    &trans                &trans                  &trans                                                 &trans         &trans           &trans
+&kp Q        &kp W   &kp E           &kp R           &kp T                                    &kp Y        &kp U       &kp I       &kp O   &kp P
+&kp A        &kp S   &mt LALT D      &mt LGUI F      &kp G                                    &kp H        &mt RGUI J  &mt RALT K  &kp L   &TD01
+&mt LSHFT Z  &kp X   &kp C           &kp V           &mt LCTRL B                              &mt RCTRL N  &kp M       &TD02       &TD03   &TD04
+&trans       &trans  &trans          &msc SCRL_UP    &kp LG(L)        &kp LA(F4)    &kp BSPC  &kp TAB      &trans      &trans      &trans  &trans
+                     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                          &trans       &trans      &trans
             >;
+
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
         layer_4 {
-            display-name = "Device Layer";
             bindings = <
-                &none            &none              &none                 &none                   &bt BT_CLR                                             &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3        &bt BT_SEL 4
-                &none            &none              &none                 &none                   &none                                                  &none          &none            &none              &none               &none
-                &sys_reset       &none              &none                 &none                   &none                                                  &none          &none            &none              &none               &sys_reset
-                &bootloader      &bt BT_CLR_ALL     &none                 &none                   &none             &none               &studio_unlock   &none          &none            &none              &none               &bootloader
-                                                    &trans                &trans                  &trans                                                 &trans         &trans           &trans
+&lt 6 Q      &lt 7 W      &lt 8 E     &kp R        &kp T                                       &kp Y       &kp U        &kp I       &kp O        &kp P
+&mt LANG1 A  &mt LANG2 S  &mt LALT D  &mt LCTRL F  &kp G                                       &kp H       &mt RCTRL J  &mt RALT K  &mt LANG1 L  &TD01
+&mt LSHFT Z  &lt 6 X      &kp C       &kp V        &mt LGUI B                                  &mt RGUI N  &kp M        &TD02       &TD03        &TD04
+&trans       &trans       &trans      &kp UP       &lt 6 RET   &lt 5 SPACE    &lt 5 BACKSPACE  &kp TAB     &trans       &trans      &trans       &trans
+                          &kp LEFT    &kp DOWN     &kp RIGHT                                   &trans      &trans       &trans
             >;
+
+            sensor-bindings = <&encoder_kp LEFT RIGHT>;
         };
 
         layer_5 {
-            status = "reserved";
-            display-name = "Brank Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
-                                                    &trans                &trans                  &trans                                                 &trans       &trans           &trans
+&mo 6              &mo 7              &mo 8      &trans     &trans                                     &kp N7       &kp N8        &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
+&mt (LANG1) LG(A)  &mt (LANG2) LG(S)  &kp LALT   &kp LCTRL  &trans                                     &kp N4       &mt RCTRL N5  &mt RALT N6  &mt LANG1 KP_PLUS  &mt LANG2 KP_MINUS
+&mt (LSHFT) LG(Z)  &lt (6) LG(X)      &kp LG(C)  &kp LG(V)  &mt (LGUI) LG(B)                           &mt RGUI N1  &kp N2        &kp N3       &kp TAB            &mt RSHFT RET
+&trans             &trans             &trans     &kp UP     &lt 6 RET         &lt 7 SPACE    &kp BSPC  &kp N0       &trans        &trans       &trans             &trans
+                                      &kp LEFT   &kp DOWN   &kp RIGHT                                  &trans       &trans        &trans
             >;
+
+            sensor-bindings = <&encoder_kp LEFT RIGHT>;
         };
 
         layer_6 {
-            status = "reserved";
-            display-name = "Brank Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
-                                                    &trans                &trans                  &trans                                                 &trans       &trans           &trans
+&TD27          &TD28    &TD29           &kp F4          &kp F5                                    &kp LS(N6)         &kp LS(N8)          &kp LS(N9)         &kp LS(RBKT)  &kp LS(NON_US_HASH)
+&kp F6         &kp F7   &mt LALT F8     &mt LCTRL F9    &kp F10                                   &kp LS(N4)         &mt (RCTRL) LS(N5)  &mt (RALT) LS(N6)  &kp RBKT      &kp NON_US_HASH
+&mt LSHFT F11  &kp F12  &kp LG(LS(N4))  &trans          &kp LGUI                                  &mt (RGUI) LS(N1)  &kp LBKT            &kp LS(N3)         &kp LS(LBKT)  &mt (RSHFT) LS(EQUAL)
+&trans         &trans   &trans          &mmv MOVE_UP    &kp LG(LEFT)     &kp LG(RIGHT)    &iOS04  &iOS05             &trans              &trans             &trans        &trans
+                        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT                           &trans             &trans              &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         layer_7 {
-            status = "reserved";
-            display-name = "Brank Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
-                                                    &trans                &trans                  &trans                                                 &trans       &trans           &trans
+&kp Q        &kp W   &kp E           &kp R           &kp T                                &kp Y        &kp U       &kp I       &kp O   &kp P
+&kp A        &kp S   &mt LALT D      &mt LGUI F      &kp G                                &kp H        &mt RGUI J  &mt RALT K  &kp L   &TD01
+&mt LSHFT Z  &kp X   &kp C           &kp V           &mt LCTRL B                          &mt RCTRL N  &kp M       &TD02       &TD03   &TD04
+&trans       &trans  &trans          &msc SCRL_UP    &kp LG(LC(Q))    &iOS00    &kp BSPC  &kp TAB      &trans      &trans      &trans  &trans
+                     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT                      &trans       &trans      &trans
+            >;
+
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_8 {
+            bindings = <
+&BT00         &BT01   &BT02         &BT03         &BT04                                       &trans        &trans    &trans    &trans  &studio_unlock
+&out OUT_USB  &trans  &kp LALT      &kp LGUI      &bootloader                                 &bootloader   &kp RGUI  &kp RALT  &trans  &trans
+&kp LSHFT     &trans  &trans        &trans        &kp LCTRL                                   &kp RCTRL     &trans    &trans    &trans  &kp RSHFT
+&trans        &trans  &trans        &kp C_VOL_UP  &kp C_VOL_DN  &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP  &trans    &trans    &trans  &trans
+                      &kp C_BRI_DN  &kp C_VOL_DN  &kp C_BRI_UP                                &trans        &trans    &trans
+            >;
+
+            sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                       &trans        &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                       &DoubleClick  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LCTRL                    &kp RCTRL     &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans        &trans    &trans    &trans  &trans
+                &trans  &trans  &trans                       &trans        &trans    &trans
             >;
         };
     };
-
 };
