@@ -680,7 +680,7 @@
         };
 
         combo12 {
-            bindings = <&mo 1>;
+            bindings = <&tog 1>;
             key-positions = <28 29>;
             layers = <0 1>;
         };
@@ -688,7 +688,7 @@
         combo13 {
             bindings = <&tog 5>;
             key-positions = <28 29>;
-            layers = <0 1>;
+            layers = <4 5>;
         };
 
         combo14 {
@@ -713,7 +713,7 @@
 
         combo18 {
             bindings = <&mkp MB2>;
-            key-positions = <1 11>;
+            key-positions = <2 12>;
         };
 
         combo19 {
