@@ -424,14 +424,6 @@
             label = "BT04";
         };
 
-        DoubleClick: DoubleClick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mkp MB1>, <&macro_wait_time 50>, <&mkp MB1>;
-
-            label = "DOUBLECLICK";
-        };
-
         mc00: mc00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -835,11 +827,11 @@
 
         layer_9 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans        &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &DoubleClick  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LCTRL                    &kp RCTRL     &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans        &trans    &trans    &trans  &trans
-                &trans  &trans  &trans                       &trans        &trans    &trans
+&trans  &trans  &trans  &trans  &trans                       &trans     &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                       &trans     &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LCTRL                    &kp RCTRL  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans    &trans    &trans  &trans
+                &trans  &trans  &trans                       &trans     &trans    &trans
             >;
         };
     };
