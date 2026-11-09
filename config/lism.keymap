@@ -83,7 +83,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD01";
             #binding-cells = <0>;
-            bindings = <&HT00 RSHFT 0>, <&us_equal>;
+            bindings = <&HT00 LANG1 0>, <&us_equal>;
 
             tapping-term-ms = <300>;
         };
@@ -161,7 +161,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD10";
             #binding-cells = <0>;
-            bindings = <&lt (2) LC(A)>, <&mc09>;
+            bindings = <&mt (LANG1) LC(A)>, <&mc09>;
 
             tapping-term-ms = <300>;
         };
@@ -652,12 +652,12 @@
         };
 
         combo07 {
-            bindings = <&mc00>;
+            bindings = <&mo 8>;
             key-positions = <16 17>;
         };
 
         combo08 {
-            bindings = <&mo 8>;
+            bindings = <&mc00>;
             key-positions = <18 17>;
         };
 
@@ -728,7 +728,7 @@
         layer_0 {
             bindings = <
 &lt 2 Q      &lt 3 W      &lt 8 E     &kp R       &kp T                                        &kp Y        &kp U       &kp I       &kp O        &kp L
-&lt 2 A      &mt LANG2 S  &mt LALT D  &mt LGUI F  &mt LANG1 G                                  &mt LANG1 H  &mt RGUI J  &mt RALT K  &mt LANG2 P  &TD01
+&mt LANG1 A  &mt LANG2 S  &mt LALT D  &mt LGUI F  &kp G                                        &kp H        &mt RGUI J  &mt RALT K  &mt LANG2 P  &TD01
 &mt LSHFT Z  &lt 2 X      &kp C       &kp V       &mt LCTRL B                                  &mt RCTRL N  &kp M       &TD02       &TD03        &TD04
 &trans       &trans       &trans      &kp UP      &lt 2 RET    &lt 1 SPACE    &lt 1 BACKSPACE  &kp TAB      &trans      &trans      &trans       &trans
                           &kp LEFT    &kp DOWN    &kp RIGHT                                    &trans       &trans      &trans
@@ -739,11 +739,11 @@
 
         layer_1 {
             bindings = <
-&TD05   &HT02 3 0      &HT03 8 0  &mc04     &TD09                                           &kp N7        &kp N8       &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
-&TD10   &TD11          &TD12      &TD13     &mt (LANG1) LC(PG_DN)                           &mt LANG1 N4  &mt RGUI N5  &mt RALT N6  &mt LANG1 KP_PLUS  &mt RSHFT KP_MINUS
-&TD15   &lt (2) LC(X)  &kp LC(C)  &TD18     &mt (LCTRL) LC(B)                               &mt RCTRL N1  &kp N2       &kp N3       &kp TAB            &mt RSHFT RET
-&trans  &trans         &trans     &kp UP    &lt 2 RET              &lt 3 SPACE    &kp BSPC  &kp N0        &trans       &trans       &trans             &trans
-                       &kp LEFT   &kp DOWN  &kp RIGHT                                       &trans        &trans       &trans
+&TD05   &HT02 3 0      &HT03 8 0  &mc04     &TD09                                       &kp N7        &kp N8       &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
+&TD10   &TD11          &TD12      &TD13     &kp LC(PG_DN)                               &kp N4        &mt RGUI N5  &mt RALT N6  &mt LANG2 KP_PLUS  &mt LANG1 KP_MINUS
+&TD15   &lt (2) LC(X)  &kp LC(C)  &TD18     &mt (LCTRL) LC(B)                           &mt RCTRL N1  &kp N2       &kp N3       &kp TAB            &mt RSHFT RET
+&trans  &trans         &trans     &kp UP    &lt 2 RET          &lt 3 SPACE    &kp BSPC  &kp N0        &trans       &trans       &trans             &trans
+                       &kp LEFT   &kp DOWN  &kp RIGHT                                   &trans        &trans       &trans
             >;
 
             sensor-bindings = <&encoder_kp LEFT RIGHT>;
@@ -775,11 +775,11 @@
 
         layer_4 {
             bindings = <
-&lt 6 Q      &lt 7 W      &lt 8 E     &kp R        &kp T                                        &kp Y        &kp U        &kp I       &kp O        &kp L
-&lt 6 A      &mt LANG2 S  &mt LALT D  &mt LCTRL F  &mt LANG1 G                                  &mt LANG1 H  &mt RCTRL J  &mt RALT K  &mt LANG2 P  &TD01
-&mt LSHFT Z  &lt 6 X      &kp C       &kp V        &mt LGUI B                                   &mt RGUI N   &kp M        &TD02       &TD03        &TD04
-&trans       &trans       &trans      &kp UP       &lt 6 RET    &lt 5 SPACE    &lt 5 BACKSPACE  &kp TAB      &trans       &trans      &trans       &trans
-                          &kp LEFT    &kp DOWN     &kp RIGHT                                    &trans       &trans       &trans
+&lt 6 Q      &lt 7 W      &lt 8 E     &kp R        &kp T                                       &kp Y       &kp U        &kp I       &kp O        &kp L
+&mt LANG1 A  &mt LANG2 S  &mt LALT D  &mt LCTRL F  &kp G                                       &kp H       &mt RCTRL J  &mt RALT K  &mt LANG2 P  &TD01
+&mt LSHFT Z  &lt 6 X      &kp C       &kp V        &mt LGUI B                                  &mt RGUI N  &kp M        &TD02       &TD03        &TD04
+&trans       &trans       &trans      &kp UP       &lt 6 RET   &lt 5 SPACE    &lt 5 BACKSPACE  &kp TAB     &trans       &trans      &trans       &trans
+                          &kp LEFT    &kp DOWN     &kp RIGHT                                   &trans      &trans       &trans
             >;
 
             sensor-bindings = <&encoder_kp LEFT RIGHT>;
@@ -787,11 +787,11 @@
 
         layer_5 {
             bindings = <
-&mo 6              &mo 7              &mo 8      &trans     &trans                                     &kp N7        &kp N8        &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
-&lt (6) LG(A)      &mt (LANG2) LG(S)  &kp LALT   &kp LCTRL  &kp LANG1                                  &mt LANG1 N4  &mt RCTRL N5  &mt RALT N6  &mt LANG2 KP_PLUS  &mt RSHFT KP_MINUS
-&mt (LSHFT) LG(Z)  &lt (6) LG(X)      &kp LG(C)  &kp LG(V)  &mt (LGUI) LG(B)                           &mt RGUI N1   &kp N2        &kp N3       &kp TAB            &mt RSHFT RET
-&trans             &trans             &trans     &kp UP     &lt 6 RET         &lt 7 SPACE    &kp BSPC  &kp N0        &trans        &trans       &trans             &trans
-                                      &kp LEFT   &kp DOWN   &kp RIGHT                                  &trans        &trans        &trans
+&mo 6              &mo 7              &mo 8      &trans     &trans                                     &kp N7       &kp N8        &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
+&mt (LANG1) LG(A)  &mt (LANG2) LG(S)  &kp LALT   &kp LCTRL  &trans                                     &kp N4       &mt RCTRL N5  &mt RALT N6  &mt LANG2 KP_PLUS  &mt LANG1 KP_MINUS
+&mt (LSHFT) LG(Z)  &lt (6) LG(X)      &kp LG(C)  &kp LG(V)  &mt (LGUI) LG(B)                           &mt RGUI N1  &kp N2        &kp N3       &kp TAB            &mt RSHFT RET
+&trans             &trans             &trans     &kp UP     &lt 6 RET         &lt 7 SPACE    &kp BSPC  &kp N0       &trans        &trans       &trans             &trans
+                                      &kp LEFT   &kp DOWN   &kp RIGHT                                  &trans       &trans        &trans
             >;
 
             sensor-bindings = <&encoder_kp LEFT RIGHT>;
@@ -835,11 +835,11 @@
 
         layer_9 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans     &trans        &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans                       &trans     &DoubleClick  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &kp LCTRL                    &kp RCTRL  &trans        &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans        &trans    &trans    &trans
-                &trans  &trans  &trans                       &trans     &trans        &trans
+&trans  &trans  &trans  &trans  &trans                       &trans        &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                       &DoubleClick  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LCTRL                    &kp RCTRL     &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans        &trans    &trans    &trans  &trans
+                &trans  &trans  &trans                       &trans        &trans    &trans
             >;
         };
     };
