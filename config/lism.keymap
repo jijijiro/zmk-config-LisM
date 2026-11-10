@@ -639,71 +639,76 @@
         };
 
         combo06 {
+            bindings = <&kp MINUS>;
+            key-positions = <16 15>;
+        };
+
+        combo07 {
             bindings = <&mo 8>;
             key-positions = <16 17>;
         };
 
-        combo07 {
+        combo08 {
             bindings = <&mc00>;
             key-positions = <17 18>;
         };
 
-        combo08 {
-            bindings = <&kp APOS>;
-            key-positions = <25 26>;
-            layers = <1 5>;
-        };
-
         combo09 {
-            bindings = <&kp DOT>;
-            key-positions = <26 27>;
+            bindings = <&kp APOS>;
+            key-positions = <26 25>;
             layers = <1 5>;
         };
 
         combo10 {
-            bindings = <&kp COMMA>;
-            key-positions = <27 28>;
+            bindings = <&kp DOT>;
+            key-positions = <27 26>;
             layers = <1 5>;
         };
 
         combo11 {
+            bindings = <&kp COMMA>;
+            key-positions = <28 27>;
+            layers = <1 5>;
+        };
+
+        combo12 {
             bindings = <&tog 1>;
             key-positions = <28 29>;
             layers = <0 1>;
         };
 
-        combo12 {
+        combo13 {
             bindings = <&tog 5>;
             key-positions = <28 29>;
             layers = <4 5>;
         };
 
-        combo13 {
+        combo14 {
             bindings = <&kp SPACE>;
             key-positions = <36 37>;
         };
 
-        combo14 {
+        combo15 {
             bindings = <&kp DEL>;
-            key-positions = <0 10>;
+            key-positions = <10 0>;
         };
 
-        combo15 {
+        combo16 {
             bindings = <&kp BACKSPACE>;
             key-positions = <10 20>;
         };
 
-        combo16 {
+        combo17 {
             bindings = <&mkp MB1>;
             key-positions = <1 11>;
         };
 
-        combo17 {
+        combo18 {
             bindings = <&mkp MB2>;
             key-positions = <2 12>;
         };
 
-        combo18 {
+        combo19 {
             bindings = <&mkp MB4>;
             key-positions = <5 15>;
         };
