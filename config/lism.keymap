@@ -644,12 +644,12 @@
         };
 
         combo07 {
-            bindings = <&mo 8>;
+            bindings = <&mc00>;
             key-positions = <16 17>;
         };
 
         combo08 {
-            bindings = <&mc00>;
+            bindings = <&mo 8>;
             key-positions = <17 18>;
         };
 
@@ -711,6 +711,21 @@
         combo19 {
             bindings = <&mkp MB4>;
             key-positions = <5 15>;
+        };
+
+        combo20 {
+            bindings = <&none>;
+            key-positions = <6 16>;
+        };
+
+        combo21 {
+            bindings = <&mkp MB1>;
+            key-positions = <7 17>;
+        };
+
+        combo22 {
+            bindings = <&mkp MB2>;
+            key-positions = <8 18>;
         };
     };
 
@@ -823,16 +838,6 @@
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans     &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &kp LCTRL                    &kp RCTRL  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans     &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans    &trans    &trans  &trans
-                &trans  &trans  &trans                       &trans     &trans    &trans
-            >;
         };
     };
 };
