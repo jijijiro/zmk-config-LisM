@@ -603,6 +603,14 @@
 
             label = "IOS05";
         };
+
+        DoubleClick: DoubleClick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&macro_wait_time 50>, <&mkp MB1>;
+
+            label = "DOUBLECLICK";
+        };
     };
 
     combos {
@@ -714,7 +722,7 @@
         };
 
         combo20 {
-            bindings = <&none>;
+            bindings = <&DoubleClick>;
             key-positions = <16 26>;
         };
 
