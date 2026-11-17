@@ -652,88 +652,83 @@
         };
 
         combo07 {
-            bindings = <&mo 8>;
-            key-positions = <16 17>;
+            bindings = <&mkp MB1>;
+            key-positions = <17 16>;
         };
 
         combo08 {
-            bindings = <&mc00>;
-            key-positions = <17 18>;
+            bindings = <&mkp MB2>;
+            key-positions = <18 17>;
         };
 
         combo09 {
-            bindings = <&kp APOS>;
-            key-positions = <26 25>;
-            layers = <1 5>;
+            bindings = <&mc00>;
+            key-positions = <19 18>;
         };
 
         combo10 {
-            bindings = <&kp DOT>;
+            bindings = <&kp APOS>;
             key-positions = <27 26>;
             layers = <1 5>;
         };
 
         combo11 {
+            bindings = <&kp DOT>;
+            key-positions = <27 26>;
+            layers = <1 5>;
+        };
+
+        combo12 {
             bindings = <&kp COMMA>;
             key-positions = <28 27>;
             layers = <1 5>;
         };
 
-        combo12 {
+        combo13 {
             bindings = <&tog 1>;
             key-positions = <28 29>;
             layers = <0 1>;
         };
 
-        combo13 {
+        combo14 {
             bindings = <&tog 5>;
-            key-positions = <28 29>;
+            key-positions = <29 28>;
             layers = <4 5>;
         };
 
-        combo14 {
+        combo15 {
             bindings = <&kp SPACE>;
             key-positions = <36 37>;
         };
 
-        combo15 {
+        combo16 {
             bindings = <&kp DEL>;
             key-positions = <10 0>;
         };
 
-        combo16 {
+        combo17 {
             bindings = <&kp BACKSPACE>;
             key-positions = <10 20>;
         };
 
-        combo17 {
+        combo18 {
             bindings = <&mkp MB1>;
             key-positions = <1 11>;
         };
 
-        combo18 {
+        combo19 {
             bindings = <&mkp MB2>;
             key-positions = <2 12>;
         };
 
-        combo19 {
-            bindings = <&mkp MB4>;
-            key-positions = <15 5>;
-        };
-
         combo20 {
-            bindings = <&mkp MB1>;
-            key-positions = <16 6>;
+            bindings = <&mkp MB4>;
+            key-positions = <5 15>;
         };
 
         combo21 {
-            bindings = <&mkp MB2>;
-            key-positions = <17 7>;
-        };
-
-        combo22 {
-            bindings = <&none>;
-            key-positions = <18 8>;
+            bindings = <&mo 8>;
+            key-positions = <6 16>;
         };
     };
 
