@@ -668,7 +668,7 @@
 
         combo10 {
             bindings = <&kp APOS>;
-            key-positions = <27 26>;
+            key-positions = <26 25>;
             layers = <1 5>;
         };
 
