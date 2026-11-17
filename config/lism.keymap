@@ -652,12 +652,12 @@
         };
 
         combo07 {
-            bindings = <&mc00>;
+            bindings = <&mo 8>;
             key-positions = <16 17>;
         };
 
         combo08 {
-            bindings = <&mo 8>;
+            bindings = <&mc00>;
             key-positions = <17 18>;
         };
 
@@ -722,17 +722,17 @@
         };
 
         combo20 {
-            bindings = <&DoubleClick>;
+            bindings = <&mkp MB1>;
             key-positions = <16 6>;
         };
 
         combo21 {
-            bindings = <&mkp MB1>;
+            bindings = <&mkp MB2>;
             key-positions = <17 7>;
         };
 
         combo22 {
-            bindings = <&mkp MB2>;
+            bindings = <&none>;
             key-positions = <18 8>;
         };
     };
