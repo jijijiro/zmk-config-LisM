@@ -353,7 +353,7 @@
             bindings = <&kp>, <&us_minus>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <0>;
             flavor = "tap-preferred";
         };
 
@@ -730,7 +730,7 @@
 &lt 2 Q      &lt 3 W      &lt 8 E     &kp R       &kp T                                        &kp Y        &kp U       &kp I       &kp O        &kp L
 &mt LANG1 A  &mt LANG2 S  &mt LALT D  &mt LGUI F  &mt LCTRL G                                  &mt RCTRL H  &mt RGUI J  &mt RALT K  &mt LANG2 P  &TD01
 &mt LSHFT Z  &lt 2 X      &kp C       &kp V       &kp B                                        &kp N        &kp M       &TD02       &TD03        &TD04
-&trans       &trans       &trans      &kp UP      &lt 2 RET    &lt 1 SPACE    &lt 1 BACKSPACE  &lt 9 TAB    &trans      &trans      &trans       &trans
+&mo 8        &mkp MB1     &mkp MB2    &kp UP      &lt 2 RET    &lt 1 SPACE    &lt 1 BACKSPACE  &kp TAB      &trans      &mkp MB1    &mkp MB2     &mo 8
                           &kp LEFT    &kp DOWN    &kp RIGHT                                    &trans       &trans      &trans
             >;
 
@@ -742,7 +742,7 @@
 &TD05   &HT02 3 0      &HT03 8 0  &mc04     &TD09                                           &kp N7        &kp N8       &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
 &TD10   &TD11          &TD12      &TD13     &mt (LCTRL) LC(PG_DN)                           &mt RCTRL N4  &mt RGUI N5  &mt RALT N6  &mt LANG2 KP_PLUS  &mt LANG1 KP_MINUS
 &TD15   &lt (2) LC(X)  &kp LC(C)  &TD18     &kp LC(B)                                       &kp N1        &kp N2       &kp N3       &kp TAB            &mt RSHFT RET
-&trans  &trans         &trans     &kp UP    &lt 2 RET              &lt 3 SPACE    &kp BSPC  &lt 9 N0      &trans       &trans       &trans             &trans
+&trans  &trans         &trans     &kp UP    &lt 2 RET              &lt 3 SPACE    &kp BSPC  &kp N0        &trans       &trans       &trans             &trans
                        &kp LEFT   &kp DOWN  &kp RIGHT                                       &trans        &trans       &trans
             >;
 
@@ -778,7 +778,7 @@
 &lt 6 Q      &lt 7 W      &lt 8 E     &kp R        &kp T                                       &kp Y       &kp U        &kp I       &kp O        &kp L
 &mt LANG1 A  &mt LANG2 S  &mt LALT D  &mt LCTRL F  &mt LGUI G                                  &mt RGUI H  &mt RCTRL J  &mt RALT K  &mt LANG2 P  &TD01
 &mt LSHFT Z  &lt 6 X      &kp C       &kp V        &kp B                                       &kp N       &kp M        &TD02       &TD03        &TD04
-&trans       &trans       &trans      &kp UP       &lt 6 RET   &lt 5 SPACE    &lt 5 BACKSPACE  &lt 9 TAB   &trans       &trans      &trans       &trans
+&trans       &trans       &trans      &kp UP       &lt 6 RET   &lt 5 SPACE    &lt 5 BACKSPACE  &kp TAB     &trans       &trans      &trans       &trans
                           &kp LEFT    &kp DOWN     &kp RIGHT                                   &trans      &trans       &trans
             >;
 
@@ -790,7 +790,7 @@
 &mo 6              &mo 7              &mo 8      &trans     &trans                              &kp N7       &kp N8        &kp N9       &kp KP_ASTERISK    &kp KP_SLASH
 &mt (LANG1) LG(A)  &mt (LANG2) LG(S)  &kp LALT   &kp LCTRL  &kp LGUI                            &mt RGUI N4  &mt RCTRL N5  &mt RALT N6  &mt LANG2 KP_PLUS  &mt LANG1 KP_MINUS
 &mt (LSHFT) LG(Z)  &lt (6) LG(X)      &kp LG(C)  &kp LG(V)  &kp LG(B)                           &kp N1       &kp N2        &kp N3       &kp TAB            &mt RSHFT RET
-&trans             &trans             &trans     &kp UP     &lt 6 RET  &lt 7 SPACE    &kp BSPC  &lt 9 N0     &trans        &trans       &trans             &trans
+&trans             &trans             &trans     &kp UP     &lt 6 RET  &lt 7 SPACE    &kp BSPC  &kp N0       &trans        &trans       &trans             &trans
                                       &kp LEFT   &kp DOWN   &kp RIGHT                           &trans       &trans        &trans
             >;
 
@@ -831,16 +831,6 @@
             >;
 
             sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
-                &trans  &trans  &trans                    &trans  &trans    &trans
-            >;
         };
     };
 };
