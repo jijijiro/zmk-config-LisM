@@ -22,12 +22,16 @@
 };
 
 // セントラルのリスナーを有効化し、deviceを紐付け
+&zip_temp_layer {
+    excluded-positions = <15 16 17 18>;
+};
 
 &central_listener {
     status = "okay";
     device = <&trackball_central>;
     input-processors = 
-        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+        <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+        <&zip_temp_layer 9 10000>;
 
     scroller {
         layers = <8>;
@@ -36,4 +40,4 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 16>;
     };
-};
+};,,,
